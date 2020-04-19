@@ -1,0 +1,123 @@
+<resources>
+
+    <!--
+       ~
+       ~    Treble Check - Treble Compatibility Checking App
+       ~    Copyright (C) 2017-2020  KevinT.
+       ~
+       ~    This program is free software: you can redistribute it and/or modify
+       ~    it under the terms of the GNU General Public License as published by
+       ~    the Free Software Foundation, either version 3 of the License, or
+       ~    (at your option) any later version.
+       ~
+       ~    This program is distributed in the hope that it will be useful,
+       ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+       ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+       ~    GNU General Public License for more details.
+       ~
+       ~    You should have received a copy of the GNU General Public License
+       ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+       ~
+       -->
+
+    <string name="app_name">Treble Check</string>
+
+    <string name="about_title">About</string>
+    <string name="about_app_title">About app</string>
+    <string name="about_app_version_pattern">v%1$s</string>
+    <string name="about_app_birthday_pattern">Today marks this app&#8217;s %1$s birthday!</string>
+    <string name="about_app_changelog_title">Changelog</string>
+    <string name="about_app_twitter_title">Follow on Twitter</string>
+    <string name="about_app_github_title">Fork on Github</string>
+    <string name="about_app_licenses_title">Licenses</string>
+    <string name="about_app_updater_title">Check for updates</string>
+    <string name="about_dev_title">Developer</string>
+    <string name="about_dev_info_detail_name_title">KevinT.</string>
+    <string name="about_dev_info_detail_location_title">Cavite, Philippines</string>
+    <string name="about_dev_info_detail_birthday_pattern">Today is his %1$s birthday!</string>
+    <string name="about_dev_email_title">Write an email</string>
+    <string name="about_dev_facebook_title">Visit on Facebook</string>
+    <string name="about_dev_instagram_title">Visit on Instagram</string>
+    <string name="about_dev_twitter_title">Follow on Twitter</string>
+    <string name="about_dev_telegram_title">Message on Telegram</string>
+    <string name="about_dev_google_play_title">Check out on Google Play</string>
+    <string name="about_others_title">Others</string>
+    <string name="about_others_rate_title">Rate on Google Play</string>
+    <string name="about_others_translate_title">Translate the app</string>
+    <string name="about_others_donate_title">Support development</string>
+
+    <string name="checker_treble_title">Project Treble</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">Your device includes support for Project Treble. VNDK %1$s is also bundled alongside it.</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">Your device includes support for the legacy version of Project Treble. VNDK %1$s is also bundled alongside it.</string>
+    <string name="checker_treble_unsupported_supporting_text">Your device does not support Project Treble.</string>
+
+    <string name="checker_ab_title">Seamless System Updates</string>
+    <string name="checker_ab_supported_supporting_text">Your device includes support for Seamless System Updates and is detected to have an A/B system partition.</string>
+    <string name="checker_ab_supported_virtual_supporting_text">Your device includes support for the new Seamless System Updates and is detected to have a virtual A/B system partition. Virtual A/B partitions can be freely resized accordingly depending on the amount of space needed.</string>
+    <string name="checker_ab_supported_detail_text">Your device can install system updates in the background resulting to minimal user interruption. Installing updates are also less risky as the device can reboot back into the old partition and remain usable once something goes wrong with an update.</string>
+    <string name="checker_ab_unsupported_supporting_text">Your device does not support Seamless System Updates and is detected to have an A-only system partition.</string>
+    <string name="checker_ab_unsupported_detail_text">Your device only uses one partition for the system, resulting to the device being temporarily unusable while an update is taking place. Failed updates can also render the device unusable until a fix is applied.</string>
+
+    <string name="checker_cpu_architecture_title">CPU Architecture</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">Unknown</string>
+    <string name="checker_cpu_architecture_arm32_subtitle">ARM 32-bit</string>
+    <string name="checker_cpu_architecture_arm32_binder64_subtitle">ARM 32-bit Binder 64-bit</string>
+    <string name="checker_cpu_architecture_arm64_subtitle">ARM 64-bit</string>
+    <string name="checker_cpu_architecture_x86_subtitle">x86</string>
+    <string name="checker_cpu_architecture_x86_64_subtitle">x86 64-bit</string>
+    <string name="checker_cpu_architecture_known_supporting_text">Your device uses a CPU with %1$s architecture.</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">Your device uses a CPU with an unknown architecture.</string>
+
+    <string name="checker_system_as_root_title">System-as-root</string>
+    <string name="checker_system_as_root_unknown_subtitle">Unknown</string>
+    <string name="checker_system_as_root_supported_supporting_text">Your device includes support for system-as-root.</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">Your device does not support system-as-root.</string>
+    <string name="checker_system_as_root_unknown_supporting_text">There was an error reading the mounted file systems on your device.</string>
+
+    <string name="checker_donate_title">Donate</string>
+    <string name="checker_donate_subtitle">Support the app development</string>
+    <string name="checker_donate_supporting_text">Show your love and support for the app by donating. Donations help us maintain quality apps like this and develop more in the future.</string>
+    <string name="checker_donate_action_donate_title">Donate</string>
+    <string name="checker_donate_action_dismiss_title">Dismiss</string>
+
+    <string name="checker_global_action_more_title">More info</string>
+    <string name="checker_global_action_less_title">Less</string>
+    <string name="checker_global_supported_subtitle">Supported</string>
+    <string name="checker_global_unsupported_subtitle">Unsupported</string>
+
+    <string name="utils_error_cant_open_url">There is no app installed on your device that can open this URL.</string>
+
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_message">
+        v3.0.0 – 04/20/2020\n
+        – updated design\n
+        – added support for identifying Virtual A/B partitions\n
+        - added support for checking System-as-root and CPU Architecture\n
+        – general improvements and bug fixes
+    </string>
+    <string name="changelog_action">@android:string/ok</string>
+
+    <string name="updater_flexible_complete_prompt_message">An update has just been downloaded.</string>
+    <string name="updater_flexible_complete_prompt_action_message">Restart</string>
+    <string name="updater_flexible_download_start_message">The update is now downloading.</string>
+    <string name="updater_feedback_up_to_date">You are running the latest version of the app.</string>
+    <string name="updater_feedback_in_progress">An update is already underway.</string>
+    <string name="updater_feedback_error">An error occurred while trying to update. Please try again.</string>
+
+    <string name="donate_title">Donate</string>
+    <string name="donate_error_title">Donation failed</string>
+    <string name="donate_error_service_unavailable_message">A connection to the server could not be made. Please check your internet connection or try again in a few minutes.</string>
+    <string name="donate_error_api_message">An error has occurred while trying to process the purchase.</string>
+    <string name="donate_error_unknown_message">An unknown error has occurred.</string>
+    <string name="donate_pending_title">Purchase pending</string>
+    <string name="donate_pending_message">A purchase on your account is still pending. Please coordinate with your payment method provider to complete your purchase.</string>
+    <string name="donate_received_title">Thank you!</string>
+    <string name="donate_received_message">From the bottom of our hearts, we thank you for showing your support.</string>
+
+    <string name="rate_title">Love the app?</string>
+    <string name="rate_message">If you enjoy using Treble Check, please take a moment and leave a review on Google Play.</string>
+    <string name="rate_action_neutral">Later</string>
+    <string name="rate_action_negative">Never</string>
+    <string name="rate_action_positive">Rate</string>
+    <string name="rate_error_cant_open_url">There is no app installed on your device that can open this URL.</string>
+</resources>

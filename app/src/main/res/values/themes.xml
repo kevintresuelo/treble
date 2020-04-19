@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+    <style name="Theme.Treble" parent="Base.Theme.Treble"/>
+    <!--Base custom theme which will be shared between both light and dark theme variants-->
+    <style name="Base.Theme.Treble" parent="Base.Theme.MaterialThemeBuilder">
+        <!--Material color attributes (light theme) -->
+        <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+        <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+        <!--selection controls.-->
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryVariant">@color/primary_700</item>
+        <item name="colorSecondary">@color/secondary_200</item>
+        <item name="colorSecondaryVariant">@color/secondary_500</item>
+        <!--colorBackground appears behind scrollable content and is used for the default window-->
+        <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+        <!--and menus. colorError is used to indicate an error state for components such as-->
+        <!--text fields.-->
+        <item name="android:colorBackground">@color/gray_100</item>
+        <item name="colorSurface">@color/white_50</item>
+        <item name="colorError">@color/red_600</item>
+        <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+        <!--on which they appear.-->
+        <item name="colorOnPrimary">@color/color_on_primary_high</item>
+        <item name="colorOnSecondary">@color/color_on_secondary_high</item>
+        <item name="colorOnBackground">@color/color_on_background_high</item>
+        <item name="colorOnSurface">@color/color_on_surface_high</item>
+        <item name="colorOnError">@color/color_on_error_high</item>
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Treble.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Treble.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Treble.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Treble.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Treble.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Treble.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Treble.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Treble.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Treble.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Treble.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Treble.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Treble.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Treble.Overline</item>
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Treble.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Treble.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Treble.LargeComponent</item>
+        <!--Component styles-->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Treble.BottomSheetDialog</item>
+        <item name="navigationViewStyle">@style/Widget.Treble.NavigationView</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
+    </style>
+    <style name="Base.Theme.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>

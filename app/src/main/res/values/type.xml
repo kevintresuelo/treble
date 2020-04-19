@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<resources>
+
+    <style name="TextAppearance.Treble.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+    </style>
+
+    <style name="TextAppearance.Treble.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+    </style>
+
+    <style name="TextAppearance.Treble.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+    </style>
+
+    <style name="TextAppearance.Treble.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+    </style>
+
+    <style name="TextAppearance.Treble.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+    </style>
+
+    <style name="TextAppearance.Treble.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+    </style>
+
+    <style name="TextAppearance.Treble.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+    </style>
+
+    <style name="TextAppearance.Treble.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+    </style>
+
+    <style name="TextAppearance.Treble.Body1" parent="TextAppearance.MaterialComponents.Body1">
+    </style>
+
+    <style name="TextAppearance.Treble.Body2" parent="TextAppearance.MaterialComponents.Body2">
+    </style>
+
+    <style name="TextAppearance.Treble.Button" parent="TextAppearance.MaterialComponents.Button">
+    </style>
+
+    <style name="TextAppearance.Treble.Caption" parent="TextAppearance.MaterialComponents.Caption">
+    </style>
+
+    <style name="TextAppearance.Treble.Overline" parent="TextAppearance.MaterialComponents.Overline">
+    </style>
+
+</resources>

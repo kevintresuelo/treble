@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<resources>
+
+    <color name="primary_200">#fbb450</color> <!--Color primary (dark)-->
+    <color name="primary_500">#f99411</color> <!--Color primary (light)-->
+    <color name="primary_600">#f58910</color> <!--Color primary variant (dark)-->
+    <color name="primary_700">#ef790e</color> <!--Color primary variant (light)-->
+
+    <color name="secondary_200">#9dceba</color> <!--Color secondary-->
+    <color name="secondary_500">#619a80</color> <!--Color secondary variant-->
+
+    <color name="red_200">#cf6679</color> <!--Color error (dark)-->
+    <color name="red_600">#b00020</color> <!--Color error (light)-->
+
+    <!--Color surface (light), color on error (light), -->
+    <!--color on surface (dark), color on surface (dark)-->
+    <color name="white_50">#ffffff</color>
+    
+    <color name="gray_100">#F5F5F5</color>
+
+    <color name="black_800">#121212</color> <!--Color surface (dark)-->
+    <!--Color on secondary (light), color on background (light),-->
+    <!--color on surface (light)-->
+    <color name="black_900">#000000</color>
+</resources>

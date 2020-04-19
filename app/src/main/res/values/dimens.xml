@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<resources>
+    <dimen name="const0_5x">2dp</dimen>
+    <dimen name="const1_0x">4dp</dimen>
+    <dimen name="const2_0x">8dp</dimen>
+    <dimen name="const4_0x">16dp</dimen>
+    <dimen name="const6_0x">24dp</dimen>
+    <dimen name="const8_0x">32dp</dimen>
+    <dimen name="const12_0x">48dp</dimen>
+    <dimen name="const16_0x">64dp</dimen>
+
+    <!--Emphasis modifiers for "on" colors-->
+    <dimen name="alpha_emphasis_high">@dimen/material_emphasis_high_type</dimen>
+    <dimen name="alpha_emphasis_medium">@dimen/material_emphasis_medium</dimen>
+    <dimen name="alpha_emphasis_disabled">@dimen/material_emphasis_disabled</dimen>
+
+    <dimen name="global_margin_full">@dimen/const4_0x</dimen>
+    <dimen name="global_margin_half">@dimen/const2_0x</dimen>
+    <dimen name="global_divider_height">@dimen/const2_0x</dimen>
+    <dimen name="global_spacing">@dimen/const4_0x</dimen>
+    <dimen name="global_spacing_half">@dimen/const2_0x</dimen>
+
+    <dimen name="checker_icon_size">@dimen/const12_0x</dimen>
+
+    <dimen name="about_icon_size">@dimen/const6_0x</dimen>
+
+    <dimen name="donate_list_item_height">@dimen/const16_0x</dimen>
+    <dimen name="donate_list_item_icon_size">@dimen/const6_0x</dimen>
+</resources>

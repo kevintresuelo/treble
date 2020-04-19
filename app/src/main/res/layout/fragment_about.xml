@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="screens.AboutFragment">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fa_cl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="@dimen/global_margin_full">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fa_mcv_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/fa_ll_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fa_tv_app_title"
+                        style="?textAppearanceOverline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/global_margin_full"
+                        android:layout_marginTop="@dimen/global_margin_full"
+                        android:layout_marginBottom="@dimen/global_margin_half"
+                        android:text="@string/about_app_title"
+                        android:textColor="@color/color_on_surface_low" />
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_info_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@mipmap/ic_launcher_round" />
+
+                        <LinearLayout
+                            android:id="@+id/fa_ll_app_info_detail_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fa_tv_app_info_detail_name"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/global_margin_full"
+                                android:text="@string/app_name"
+                                android:textColor="@color/color_on_surface_high" />
+
+                            <TextView
+                                android:id="@+id/fa_tv_app_info_detail_supplementary"
+                                style="@style/TextAppearance.Treble.Body2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/global_margin_full"
+                                android:textColor="@color/color_on_surface_med" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_changelog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_changelog_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_list_alt"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_changelog_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_changelog_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_twitter_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_twitter"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_twitter_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_twitter_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_github"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_github_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_github"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_github_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_github_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_licenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_licenses_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_book"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_licenses_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_licenses_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_updater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_updater_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_download"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_updater_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_updater_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fa_mcv_dev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fa_mcv_app">
+
+                <LinearLayout
+                    android:id="@+id/fa_ll_dev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fa_tv_dev_title"
+                        style="?textAppearanceOverline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/global_margin_full"
+                        android:layout_marginTop="@dimen/global_margin_full"
+                        android:layout_marginBottom="@dimen/global_margin_half"
+                        android:text="@string/about_dev_title"
+                        android:textColor="@color/color_on_surface_low" />
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_info_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_person"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <LinearLayout
+                            android:id="@+id/fa_ll_dev_info_detail_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fa_tv_dev_info_detail_name"
+                                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/global_margin_full"
+                                android:text="@string/about_dev_info_detail_name_title"
+                                android:textColor="@color/color_on_surface_high" />
+
+                            <TextView
+                                android:id="@+id/fa_tv_dev_info_detail_supplementary"
+                                style="@style/TextAppearance.Treble.Body2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/global_margin_full"
+                                android:text="@string/about_dev_info_detail_location_title"
+                                android:textColor="@color/color_on_surface_med" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_email_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_at"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_email_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_email_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_facebook_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_facebook"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_facebook_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_facebook_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_instagram_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_instagram"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_instagram_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_instagram_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_twitter_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_twitter"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_twitter_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_twitter_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_telegram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_telegram_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_telegram"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_telegram_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_telegram_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_dev_google_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_dev_google_play_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_google_play"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_dev_google_play_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_dev_google_play_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fa_mcv_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fa_mcv_dev">
+
+                <LinearLayout
+                    android:id="@+id/fa_ll_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fa_tv_others_title"
+                        style="?textAppearanceOverline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/global_margin_full"
+                        android:layout_marginTop="@dimen/global_margin_full"
+                        android:layout_marginBottom="@dimen/global_margin_half"
+                        android:text="@string/about_others_title"
+                        android:textColor="@color/color_on_surface_low" />
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_others_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_others_rate_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_star"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_others_rate_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_others_rate_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_others_translate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_others_translate_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_translate"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_others_translate_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_others_translate_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fa_ll_others_donate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_others_donate_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_card_giftcard"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_others_donate_title"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_others_donate_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

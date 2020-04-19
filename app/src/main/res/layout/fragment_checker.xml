@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   ~
+   ~    Treble Check - Treble Compatibility Checking App
+   ~    Copyright (C) 2017-2020  KevinT.
+   ~
+   ~    This program is free software: you can redistribute it and/or modify
+   ~    it under the terms of the GNU General Public License as published by
+   ~    the Free Software Foundation, either version 3 of the License, or
+   ~    (at your option) any later version.
+   ~
+   ~    This program is distributed in the hope that it will be useful,
+   ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+   ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   ~    GNU General Public License for more details.
+   ~
+   ~    You should have received a copy of the GNU General Public License
+   ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+   ~
+   -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/dummy_layout_for_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/fc_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.CheckerFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fc_cl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/global_margin_full">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_treble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_treble"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_treble_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_treble_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_treble_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_close_circle"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_treble_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_treble_title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@id/fc_tv_status_treble_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_treble_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_global_unsupported_subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
+                                app:layout_constraintTop_toBottomOf="@id/fc_tv_status_treble_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_treble_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/checker_treble_unsupported_supporting_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_ab_partition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                android:animateLayoutChanges="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_treble">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_ab_partition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_ab_partition_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_ab_partition_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_ab_partition_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_download_off"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_ab_partition_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_ab_title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_ab_partition_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_ab_partition_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_global_unsupported_subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_ab_partition_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_ab_partition_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/checker_ab_unsupported_supporting_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_ab_partition_detail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/global_margin_full"
+                            android:text="@string/checker_ab_unsupported_detail_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <!-- Buttons -->
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_ab_partition_actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/global_margin_half"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_ab_partition_action_1"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/global_margin_half"
+                            android:text="@string/checker_global_action_more_title" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_donate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_ab_partition">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_donate_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_donate_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_donate_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_card_giftcard"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_donate_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_donate_title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_donate_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_donate_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_donate_subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_donate_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_donate_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/checker_donate_supporting_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_donate_actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/global_margin_half"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_donate_action_1"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/global_margin_half"
+                            android:text="@string/checker_donate_action_donate_title" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_donate_action_2"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checker_donate_action_dismiss_title" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_cpu_architecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_donate">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_cpu_architecture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_cpu_architecture_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_cpu_architecture_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_cpu_architecture_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_memory"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_cpu_architecture_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_cpu_architecture_title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_cpu_architecture_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_cpu_architecture_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_cpu_architecture_unknown_subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_cpu_architecture_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_cpu_architecture_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/checker_cpu_architecture_unknown_supporting_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_system_as_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_cpu_architecture">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_system_as_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_system_as_root_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_system_as_root_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_system_as_root_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_slash_forward"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_system_as_root_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_system_as_root_title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_system_as_root_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_system_as_root_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="@string/checker_system_as_root_unknown_subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_system_as_root_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_system_as_root_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/checker_system_as_root_unknown_supporting_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            
+            <!--
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fc_mcv_status_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/global_margin_full"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_cpu_architecture">
+
+                <LinearLayout
+                    android:id="@+id/fc_ll_status_placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_placeholder_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/global_margin_full">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fc_cl_status_placeholder_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/fc_iv_status_placeholder_icon"
+                                android:layout_width="@dimen/checker_icon_size"
+                                android:layout_height="@dimen/checker_icon_size"
+                                android:contentDescription="@null"
+                                android:src="@drawable/ic_person"
+                                android:tint="?colorPrimary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_placeholder_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="Card Title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_placeholder_subtitle"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_placeholder_icon"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/fc_tv_status_placeholder_subtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/global_margin_full"
+                                android:text="Subtitle"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/fc_iv_status_placeholder_icon"
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_placeholder_title" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/fc_tv_status_placeholder_supporting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et pharetra lacus, nec aliquam nulla. In porta erat in mauris tempus, in aliquam leo porttitor. In elit ipsum, lacinia a risus sed, blandit vehicula nibh. Sed egestas tortor neque, ut volutpat erat placerat sed. In lacinia placerat velit id pellentesque. Cras vitae faucibus enim."
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </LinearLayout>
+                   
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_placeholder_actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/global_margin_half"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_placeholder_action_1"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/global_margin_half"
+                            android:text="Action 1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_placeholder_action_2"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Action 2" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+</layout>
