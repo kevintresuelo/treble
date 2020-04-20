@@ -116,6 +116,33 @@
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary" />
 
+                        <TextView
+                            android:id="@+id/fc_tv_status_treble_detail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/global_margin_full"
+                            android:text="@string/checker_treble_detail_text"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fc_ll_status_treble_actions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/global_margin_half"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/fc_mb_status_treble_action_1"
+                            style="?attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/global_margin_half"
+                            android:text="@string/checker_global_action_more_title" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -209,7 +236,6 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons -->
                     <LinearLayout
                         android:id="@+id/fc_ll_status_ab_partition_actions"
                         android:layout_width="wrap_content"

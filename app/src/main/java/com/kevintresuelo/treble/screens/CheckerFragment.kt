@@ -111,6 +111,20 @@ class CheckerFragment : Fragment() {
         }
 
         /**
+         * Shows more info regarding Project Treble, and what it implies to the
+         * device of the user.
+         */
+        binding.fcMbStatusTrebleAction1.setOnClickListener {
+            if (binding.fcTvStatusTrebleDetailText.isVisible) {
+                collapse(binding.fcTvStatusTrebleDetailText)
+                binding.fcMbStatusTrebleAction1.text = getString(R.string.checker_global_action_more_title)
+            } else {
+                expand(binding.fcTvStatusTrebleDetailText)
+                binding.fcMbStatusTrebleAction1.text = getString(R.string.checker_global_action_less_title)
+            }
+        }
+
+        /**
          * Interprets the result of A/B Partition, then shows the appropriate
          * response on the UI.
          */
@@ -130,7 +144,7 @@ class CheckerFragment : Fragment() {
 
         /**
          * Shows more info regarding the A/B Partitions, and what it implies to
-         * the device of the user
+         * the device of the user.
          */
         binding.fcMbStatusAbPartitionAction1.setOnClickListener {
             if (binding.fcTvStatusAbPartitionDetailText.isVisible) {
