@@ -24,7 +24,7 @@
 
     <string name="about_title">About</string>
     <string name="about_app_title">About app</string>
-    <string name="about_app_version_pattern">v%1$s</string>
+    <string name="about_app_version_pattern" translatable="false">v%1$s</string>
     <string name="about_app_birthday_pattern">Today marks this app&#8217;s %1$s birthday!</string>
     <string name="about_app_changelog_title">Changelog</string>
     <string name="about_app_twitter_title">Follow on Twitter</string>
@@ -32,7 +32,7 @@
     <string name="about_app_licenses_title">Licenses</string>
     <string name="about_app_updater_title">Check for updates</string>
     <string name="about_dev_title">Developer</string>
-    <string name="about_dev_info_detail_name_title">KevinT.</string>
+    <string name="about_dev_info_detail_name_title" translatable="false">KevinT.</string>
     <string name="about_dev_info_detail_location_title">Cavite, Philippines</string>
     <string name="about_dev_info_detail_birthday_pattern">Today is his %1$s birthday!</string>
     <string name="about_dev_email_title">Write an email</string>
@@ -54,21 +54,21 @@
     <string name="checker_ab_title">Seamless System Updates</string>
     <string name="checker_ab_supported_supporting_text">Your device includes support for Seamless System Updates and is detected to have an A/B system partition.</string>
     <string name="checker_ab_supported_virtual_supporting_text">Your device includes support for the new Seamless System Updates and is detected to have a virtual A/B system partition. Virtual A/B partitions can be freely resized accordingly depending on the amount of space needed.</string>
-    <string name="checker_ab_supported_detail_text">Your device can install system updates in the background resulting to minimal user interruption. Installing updates are also less risky as the device can reboot back into the old partition and remain usable once something goes wrong with an update.</string>
+    <string name="checker_ab_supported_detail_text">Your device can install system updates in the background resulting to minimal user interruption. Installing updates is also less risky as the device can reboot back into the old partition and remain usable once something goes wrong with an update.</string>
     <string name="checker_ab_unsupported_supporting_text">Your device does not support Seamless System Updates and is detected to have an A-only system partition.</string>
     <string name="checker_ab_unsupported_detail_text">Your device only uses one partition for the system, resulting to the device being temporarily unusable while an update is taking place. Failed updates can also render the device unusable until a fix is applied.</string>
 
     <string name="checker_cpu_architecture_title">CPU Architecture</string>
     <string name="checker_cpu_architecture_unknown_subtitle">Unknown</string>
-    <string name="checker_cpu_architecture_arm32_subtitle">ARM 32-bit</string>
-    <string name="checker_cpu_architecture_arm32_binder64_subtitle">ARM 32-bit Binder 64-bit</string>
-    <string name="checker_cpu_architecture_arm64_subtitle">ARM 64-bit</string>
-    <string name="checker_cpu_architecture_x86_subtitle">x86</string>
-    <string name="checker_cpu_architecture_x86_64_subtitle">x86 64-bit</string>
+    <string name="checker_cpu_architecture_arm32_subtitle" translatable="false">ARM 32-bit</string>
+    <string name="checker_cpu_architecture_arm32_binder64_subtitle" translatable="false">ARM 32-bit Binder 64-bit</string>
+    <string name="checker_cpu_architecture_arm64_subtitle" translatable="false">ARM 64-bit</string>
+    <string name="checker_cpu_architecture_x86_subtitle" translatable="false">x86</string>
+    <string name="checker_cpu_architecture_x86_64_subtitle" translatable="false">x86 64-bit</string>
     <string name="checker_cpu_architecture_known_supporting_text">Your device uses a CPU with %1$s architecture.</string>
     <string name="checker_cpu_architecture_unknown_supporting_text">Your device uses a CPU with an unknown architecture.</string>
 
-    <string name="checker_system_as_root_title">System-as-root</string>
+    <string name="checker_system_as_root_title" translatable="false">System-as-root</string>
     <string name="checker_system_as_root_unknown_subtitle">Unknown</string>
     <string name="checker_system_as_root_supported_supporting_text">Your device includes support for system-as-root.</string>
     <string name="checker_system_as_root_unsupported_supporting_text">Your device does not support system-as-root.</string>
@@ -105,14 +105,10 @@
     <string name="updater_feedback_error">An error occurred while trying to update. Please try again.</string>
 
     <string name="donate_title">Donate</string>
-    <string name="donate_error_title">Donation failed</string>
-    <string name="donate_error_service_unavailable_message">A connection to the server could not be made. Please check your internet connection or try again in a few minutes.</string>
-    <string name="donate_error_api_message">An error has occurred while trying to process the purchase.</string>
-    <string name="donate_error_unknown_message">An unknown error has occurred.</string>
-    <string name="donate_pending_title">Purchase pending</string>
+    <string name="donate_error_service_unavailable_message">A connection to the billing server could not be made to process the donation. Please check your internet connection or try again in a few minutes.</string>
+    <string name="donate_error_unknown_message">An unknown error has occurred with the donation.</string>
     <string name="donate_pending_message">A purchase on your account is still pending. Please coordinate with your payment method provider to complete your purchase.</string>
-    <string name="donate_received_title">Thank you!</string>
-    <string name="donate_received_message">From the bottom of our hearts, we thank you for showing your support.</string>
+    <string name="donate_received_message">Donation received! From the bottom of our hearts, we thank you for showing your support.</string>
 
     <string name="rate_title">Love the app?</string>
     <string name="rate_message">If you enjoy using Treble Check, please take a moment and leave a review on Google Play.</string>
