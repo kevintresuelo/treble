@@ -50,7 +50,7 @@
     <string name="checker_treble_supported_new_vndk_supporting_text">Your device includes support for Project Treble. VNDK %1$s is also bundled alongside it.</string>
     <string name="checker_treble_supported_old_vndk_supporting_text">Your device includes support for the legacy version of Project Treble. VNDK %1$s is also bundled alongside it.</string>
     <string name="checker_treble_unsupported_supporting_text">Your device does not support Project Treble.</string>
-    <string name="checker_treble_detail_text">Project Treble separates the Android OS and the hardware abstraction layer through an HIDL interface. This enables for upgrading the Android OS without rebuilding the hardware-specific code. Devices that support Project Treble can then install system images that are based on newer versions of Android and experience new features that come with it.</string>
+    <string name="checker_treble_detail_text">Project Treble separates the Android OS and the hardware abstraction layer through an HIDL interface. This enables the upgrading the Android OS without rebuilding the hardware-specific code. Devices that support Project Treble can then install system images that are based on newer versions of Android and experience new features that come with it.</string>
 
     <string name="checker_ab_title">Seamless System Updates</string>
     <string name="checker_ab_supported_supporting_text">Your device includes support for Seamless System Updates and is detected to have an A/B system partition.</string>

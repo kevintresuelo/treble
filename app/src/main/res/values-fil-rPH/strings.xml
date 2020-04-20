@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+       ~
+       ~    Treble Check - Treble Compatibility Checking App
+       ~    Copyright (C) 2017-2020  KevinT.
+       ~
+       ~    This program is free software: you can redistribute it and/or modify
+       ~    it under the terms of the GNU General Public License as published by
+       ~    the Free Software Foundation, either version 3 of the License, or
+       ~    (at your option) any later version.
+       ~
+       ~    This program is distributed in the hope that it will be useful,
+       ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+       ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+       ~    GNU General Public License for more details.
+       ~
+       ~    You should have received a copy of the GNU General Public License
+       ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
+       ~
+       -->
+
+    <string name="app_name">"Treble Check"</string>
+    <string name="about_title">"Tungkol dito"</string>
+    <string name="about_app_title">"Tungkol sa app"</string>
+    <string name="about_app_birthday_pattern">"Ngayon ay ang %1$s na kaarawan ng app na ito!"</string>
+    <string name="about_app_changelog_title">"Listahan ng pagbabago"</string>
+    <string name="about_app_twitter_title">"Sundan sa Twitter"</string>
+    <string name="about_app_github_title">"I-fork sa Github"</string>
+    <string name="about_app_licenses_title">"Mga lisensya"</string>
+    <string name="about_app_updater_title">"Suriin kung may updates"</string>
+    <string name="about_dev_title">"Nag-develop"</string>
+    <string name="about_dev_info_detail_location_title">"Kabite, Pilipinas"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"Ngayon ay ang kanyang %1$s na kaarawan!"</string>
+    <string name="about_dev_email_title">"Sumulat ng email"</string>
+    <string name="about_dev_facebook_title">"Dalawin sa Facebook"</string>
+    <string name="about_dev_instagram_title">"Dalawin sa Instagram"</string>
+    <string name="about_dev_twitter_title">"Sundan sa Twitter"</string>
+    <string name="about_dev_telegram_title">"Sulatan sa Telegram"</string>
+    <string name="about_dev_google_play_title">"Tignan sa Google Play"</string>
+    <string name="about_others_title">"Iba pa"</string>
+    <string name="about_others_rate_title">"I-rate sa Google Play"</string>
+    <string name="about_others_translate_title">"Isalin sa ibang wika"</string>
+    <string name="about_others_donate_title">"Suportahan ang pagbuo"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Ang iyong device ay naglalaman ng suporta para sa Project Treble. Ang VNDK %1$s ay kabigkis din nito."</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Ang iyong device ay naglalaman ng suporta para sa dating bersyon ng Project Treble. Ang VNDK %1$s ay kabigkis din nito."</string>
+    <string name="checker_treble_unsupported_supporting_text">"Ang iyong device ay hindi sinusuportahan ang Project Treble."</string>
+    <string name="checker_ab_title">"Seamless System Updates"</string>
+    <string name="checker_ab_supported_supporting_text">"Ang iyong device ay naglalaman ng suporta para sa Seamless System Updates at natuklasang gumagamit ng A/B system partition."</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"Ang iyong device ay naglalaman ng suporta para sa Seamless System Updates at natuklasang gumagamit ng virtual A/B system partition. Ang mga Virtual A/B partition ay maaaring mabago ang laki nang naaayon sa kinakailangang laki ng puwang na kailangan."</string>
+    <string name="checker_ab_supported_detail_text">"Ang iyong device ay maaaring mag-install ng system updates sa background na nagreresulta sa kakaunting pagkaabala sa gumagamit. Ang pag-i-install ng updates ay hindi rin gaanong mapanganib sapagkat ang device ay maaaring mag-reboot muli sa dating partition at manatiling magagamit kung sakaling may mangyaring mali sa isang update."</string>
+    <string name="checker_ab_unsupported_supporting_text">"Ang iyong device ay hindi sinusuportahan ang Seamless System Updates at natuklasang gumagamit ng A-only system partition."</string>
+    <string name="checker_ab_unsupported_detail_text">"Ang iyong device ay gumagamit lamang ng iisang partition para sa system, na magdudulot na hindi maaaring magamit pansamantala ang device habang nangyayari ang isang update. Ang mga hindi matagumpay na updates ay maaari ring magresulta na hindi magamit ang device hanggang sa ito ay malapatan ng pagsasaayos."</string>
+    <string name="checker_cpu_architecture_title">"CPU Architecture"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"Hindi tukoy"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"Ang iyong device ay gumagamit ng CPU na may %1$s na architecture."</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Ang iyong device ay gumagamit ng CPU na may hindi tukoy na architecture."</string>
+    <string name="checker_system_as_root_unknown_subtitle">"Hindi tukoy"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"Ang iyong device ay naglalaman ng suporta para sa system-as-root."</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"Ang iyong device ay hindi sinusuportahan ang system-as-root."</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"May pagkakamali habang binabasa ang mounted file systems sa iyong device."</string>
+    <string name="checker_donate_title">"Mag-donate"</string>
+    <string name="checker_donate_subtitle">"Suportahan ang pagbuo ng app"</string>
+    <string name="checker_donate_supporting_text">"Ipamalas ang iyong pagmamahal at suporta para sa app sa pagmamagitan ng pag-do-donate. Ang mga donasyon ay tumutulong sa amin na magpanatili ng mga de kalikad na apps tulad nito at bumuo pa sa hinaharap."</string>
+    <string name="checker_donate_action_donate_title">"Mag-donate"</string>
+    <string name="checker_donate_action_dismiss_title">"Alisin"</string>
+    <string name="checker_global_action_more_title">"Karagdagang impormasyon"</string>
+    <string name="checker_global_action_less_title">"Kakaunti"</string>
+    <string name="checker_global_supported_subtitle">"Suportado"</string>
+    <string name="checker_global_unsupported_subtitle">"Hindi suportado"</string>
+    <string name="utils_error_cant_open_url">"Walang app na naka-install sa iyong device na maaaring magbukas sa URL na ito."</string>
+    <string name="changelog_title">"Listahan ng pagbabago"</string>
+    <string name="changelog_message">
+        v3.0.0 – 04/20/2020\n
+        – binago ang disenyo\n
+        – dinagdahan ng suporta upang matukoy ang Virtual A/B partitions\n
+        - dinagdahan ng suporta upang matukoy ang System-as-root at CPU Architecture\n
+        – pangkalahatang pagpapabuti at pagsasaayos"</string>
+    <string name="changelog_action">"@android:string/ok"</string>
+    <string name="updater_flexible_complete_prompt_message">"Ang update ay nai-download na."</string>
+    <string name="updater_flexible_complete_prompt_action_message">"I-restart"</string>
+    <string name="updater_flexible_download_start_message">"Ang update ay nag-do-download na."</string>
+    <string name="updater_feedback_up_to_date">"Ikaw ay mayroon na ng pinakabagong bersyon ng app."</string>
+    <string name="updater_feedback_in_progress">"Ang update ay kasalukuyan nang ginagawa."</string>
+    <string name="updater_feedback_error">"Naganap ang isang error habang sinusubukang mag-update. Maaaring paki-subukang muli."</string>
+    <string name="donate_title">"Mag-donate"</string>
+    <string name="donate_error_service_unavailable_message">"Hindi makagawa ang app ng koneksyon sa server para maiproseso ang donasyong. Mangyari lamang na suriin ang iyong koneksyon sa internet o subukang muli pagkatapos ng ilang minuto."</string>
+    <string name="donate_error_unknown_message">"Naganap ang isang hindi tukoy na error sa donasyon."</string>
+    <string name="donate_pending_message">"Ang pinamili sa iyong account ay nakabinbin pa rin. Mangyari lamang na makipag-usap sa nagkaloob ng paraang makapagbayad upang matapos ang iyong pagbili."</string>
+    <string name="donate_received_message">"Natanggap na ang donasyon! Mula sa kaibuturan ng aming mga puso, kami ay nagpapasalamat sa pagpapamalas niyo ng inyong suporta."</string>
+    <string name="rate_title">"Nagustuhan ang app?"</string>
+    <string name="rate_message">"Kung naaliw kang gamitin ang Treble Check, mangyari lamang na maglaan ng sandali upang makapag-iwan ng review sa Google Play."</string>
+    <string name="rate_action_neutral">"Mamaya"</string>
+    <string name="rate_action_negative">"Hindi kailanman"</string>
+    <string name="rate_action_positive">"I-rate"</string>
+    <string name="rate_error_cant_open_url">"Walang app na naka-install sa iyong device na maaaring magbukas sa URL na ito. "</string>
+    <string name="checker_treble_detail_text">"Inihihiwalay ng Project Treble ang Android OS at ang hardware abstraction layer sa pamamagitan ng isang HIDL interface. Hinahayaan nitong mai-upgrade ang Android OS nang hindi na kinakailangang buuin muli ang hardware-specific code. Ang mga device na sinusuportahan ang Project Treble ay kaya nang makapag-install ng system images na nakabatay sa mga bagong bersyon ng Android at maranasan ang mga bagong katangiang kaakibat nito."</string>
+</resources>
