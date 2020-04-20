@@ -24,12 +24,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
-        android:id="@+id/dummy_layout_for_snackbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <ScrollView
         android:id="@+id/fc_sv"
         android:layout_width="match_parent"
@@ -154,7 +148,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/global_margin_full"
-                android:animateLayoutChanges="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fc_mcv_status_treble">
@@ -163,14 +156,12 @@
                     android:id="@+id/fc_ll_status_ab_partition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:animateLayoutChanges="true"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:id="@+id/fc_ll_status_ab_partition_body"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:animateLayoutChanges="true"
                         android:orientation="vertical"
                         android:padding="@dimen/global_margin_full">
 
@@ -622,6 +613,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-    </LinearLayout>
 </layout>
