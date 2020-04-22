@@ -100,7 +100,7 @@ class CheckerFragment : Fragment() {
         trebleCheck?.let {
             binding.fcIvStatusTrebleIcon.setImageResource(R.drawable.ic_check_circle)
             binding.fcTvStatusTrebleSubtitle.setText(R.string.checker_global_supported_subtitle)
-            val vndkVersion = "${ if (it.isVndkLite) "Lite " else ""}${it.vndkVersion}"
+            val vndkVersion = "${ if (it.isVndkLite) "Lite " else ""}${it.vndkVersion ?: ""}"
             binding.fcTvStatusTrebleSupportingText.text = getString(
                 if (it.isTrebleLegacy)
                     R.string.checker_treble_supported_old_vndk_supporting_text

@@ -25,6 +25,7 @@ import android.util.Xml
 import org.w3c.dom.Document
 import org.xmlpull.v1.XmlPullParser
 import java.io.File
+import java.io.FileNotFoundException
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
@@ -32,7 +33,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 data class TrebleResult(
     val isTrebleLegacy: Boolean,
     val isVndkLite: Boolean,
-    val vndkVersion: String
+    val vndkVersion: String?
 )
 
 object Treble {
@@ -41,7 +42,7 @@ object Treble {
 
         val mIsLegacyTreble: Boolean
         val mIsVndkLite: Boolean
-        val mVndkVersion: String
+        val mVndkVersion: String?
 
         /**
          * Checks for the build.prop if treble is enabled, returns null if the
@@ -77,11 +78,14 @@ object Treble {
          * Reads the vendor manifest to check for the SELinux Policy version of
          * the device.
          */
-        val documentBuilderFactory: DocumentBuilderFactory = DocumentBuilderFactory
-            .newInstance()
-        val documentBuilder: DocumentBuilder = documentBuilderFactory.newDocumentBuilder()
-        val document: Document = documentBuilder.parse(if (mIsLegacyTreble) oldVndkManifest else newVndkManifest)
-        mVndkVersion = document.getElementsByTagName("sepolicy").item(0).textContent.trim()
+        mVndkVersion = try {
+            val documentBuilderFactory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()
+            val documentBuilder: DocumentBuilder = documentBuilderFactory.newDocumentBuilder()
+            val document: Document = documentBuilder.parse(if (mIsLegacyTreble) oldVndkManifest else newVndkManifest)
+            document.getElementsByTagName("sepolicy").item(0).textContent.trim()
+        } catch (e: FileNotFoundException) {
+            null
+        }
 
         /**
          * Arranges the result in a data class and returns it
