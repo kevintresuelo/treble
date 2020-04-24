@@ -78,18 +78,19 @@
 
                             <TextView
                                 android:id="@+id/fc_tv_status_treble_title"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_treble_title"
                                 android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@id/fc_tv_status_treble_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                             <TextView
                                 android:id="@+id/fc_tv_status_treble_subtitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_global_unsupported_subtitle"
@@ -97,7 +98,8 @@
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
-                                app:layout_constraintTop_toBottomOf="@id/fc_tv_status_treble_title" />
+                                app:layout_constraintTop_toBottomOf="@id/fc_tv_status_treble_title"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -183,18 +185,19 @@
 
                             <TextView
                                 android:id="@+id/fc_tv_status_ab_partition_title"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_ab_title"
                                 android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_ab_partition_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                             <TextView
                                 android:id="@+id/fc_tv_status_ab_partition_subtitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_global_unsupported_subtitle"
@@ -202,7 +205,8 @@
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
-                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_ab_partition_title" />
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_ab_partition_title"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -289,18 +293,19 @@
 
                             <TextView
                                 android:id="@+id/fc_tv_status_donate_title"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_donate_title"
                                 android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_donate_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                             <TextView
                                 android:id="@+id/fc_tv_status_donate_subtitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_donate_subtitle"
@@ -308,7 +313,8 @@
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
-                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_donate_title" />
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_donate_title"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -391,18 +397,19 @@
 
                             <TextView
                                 android:id="@+id/fc_tv_status_cpu_architecture_title"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_cpu_architecture_title"
                                 android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_cpu_architecture_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                             <TextView
                                 android:id="@+id/fc_tv_status_cpu_architecture_subtitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_cpu_architecture_unknown_subtitle"
@@ -410,7 +417,8 @@
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
-                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_cpu_architecture_title" />
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_cpu_architecture_title"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -469,18 +477,19 @@
 
                             <TextView
                                 android:id="@+id/fc_tv_status_system_as_root_title"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_system_as_root_title"
                                 android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_system_as_root_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                             <TextView
                                 android:id="@+id/fc_tv_status_system_as_root_subtitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_system_as_root_unknown_subtitle"
@@ -488,7 +497,8 @@
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
-                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_system_as_root_title" />
+                                app:layout_constraintTop_toBottomOf="@+id/fc_tv_status_system_as_root_title"
+                                app:layout_constraintEnd_toEndOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
