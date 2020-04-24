@@ -26,6 +26,7 @@ import org.w3c.dom.Document
 import org.xmlpull.v1.XmlPullParser
 import java.io.File
 import java.io.FileNotFoundException
+import java.lang.IllegalStateException
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
@@ -84,6 +85,8 @@ object Treble {
             val document: Document = documentBuilder.parse(if (mIsLegacyTreble) oldVndkManifest else newVndkManifest)
             document.getElementsByTagName("sepolicy").item(0).textContent.trim()
         } catch (e: FileNotFoundException) {
+            null
+        } catch (e: IllegalStateException) {
             null
         }
 
