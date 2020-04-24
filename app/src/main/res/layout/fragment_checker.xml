@@ -82,7 +82,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_treble_title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@id/fc_tv_status_treble_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -93,7 +93,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_global_unsupported_subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_treble_icon"
@@ -107,7 +107,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/global_margin_full"
                             android:text="@string/checker_treble_unsupported_supporting_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                         <TextView
@@ -116,7 +116,7 @@
                             android:layout_height="wrap_content"
                             android:paddingTop="@dimen/global_margin_full"
                             android:text="@string/checker_treble_detail_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary"
                             android:visibility="gone" />
 
@@ -187,7 +187,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_ab_title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_ab_partition_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -198,7 +198,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_global_unsupported_subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_ab_partition_icon"
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/global_margin_full"
                             android:text="@string/checker_ab_unsupported_supporting_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                         <TextView
@@ -221,7 +221,7 @@
                             android:layout_height="wrap_content"
                             android:paddingTop="@dimen/global_margin_full"
                             android:text="@string/checker_ab_unsupported_detail_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary"
                             android:visibility="gone" />
 
@@ -293,7 +293,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_donate_title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_donate_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -304,7 +304,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_donate_subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_donate_icon"
@@ -318,7 +318,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/global_margin_full"
                             android:text="@string/checker_donate_supporting_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                     </LinearLayout>
@@ -395,7 +395,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_cpu_architecture_title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_cpu_architecture_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -406,7 +406,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_cpu_architecture_unknown_subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_cpu_architecture_icon"
@@ -420,7 +420,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/global_margin_full"
                             android:text="@string/checker_cpu_architecture_unknown_supporting_text"
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                     </LinearLayout>
@@ -473,7 +473,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_system_as_root_title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_system_as_root_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -484,7 +484,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="@string/checker_system_as_root_unknown_subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_system_as_root_icon"
@@ -552,7 +552,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="Card Title"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textAppearance="@style/TextAppearance.Treble.Headline6"
                                 app:layout_constraintBottom_toTopOf="@+id/fc_tv_status_placeholder_subtitle"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_placeholder_icon"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -563,7 +563,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/global_margin_full"
                                 android:text="Subtitle"
-                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textAppearance="@style/TextAppearance.Treble.Body2"
                                 android:textColor="?android:attr/textColorSecondary"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@id/fc_iv_status_placeholder_icon"
@@ -577,7 +577,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/global_margin_full"
                             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et pharetra lacus, nec aliquam nulla. In porta erat in mauris tempus, in aliquam leo porttitor. In elit ipsum, lacinia a risus sed, blandit vehicula nibh. Sed egestas tortor neque, ut volutpat erat placerat sed. In lacinia placerat velit id pellentesque. Cras vitae faucibus enim."
-                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textAppearance="@style/TextAppearance.Treble.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                     </LinearLayout>

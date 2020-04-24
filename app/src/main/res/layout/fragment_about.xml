@@ -51,7 +51,7 @@
 
                     <TextView
                         android:id="@+id/fa_tv_app_title"
-                        style="?textAppearanceOverline"
+                        android:textAppearance="@style/TextAppearance.Treble.Overline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/global_margin_full"
@@ -271,7 +271,7 @@
 
                     <TextView
                         android:id="@+id/fa_tv_dev_title"
-                        style="?textAppearanceOverline"
+                        android:textAppearance="@style/TextAppearance.Treble.Overline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/global_margin_full"
@@ -521,7 +521,7 @@
 
                     <TextView
                         android:id="@+id/fa_tv_others_title"
-                        style="?textAppearanceOverline"
+                        android:textAppearance="@style/TextAppearance.Treble.Overline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/global_margin_full"
