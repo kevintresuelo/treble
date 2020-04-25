@@ -24,22 +24,25 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.kevintresuelo.treble.utils.AppInfo
+import com.kevintresuelo.novus.UpdateChecker
 import com.kevintresuelo.treble.BuildConfig
-
 import com.kevintresuelo.treble.R
+import com.kevintresuelo.treble.databinding.DialogContributorsListBinding
 import com.kevintresuelo.treble.databinding.FragmentAboutBinding
 import com.kevintresuelo.treble.donate.DonateDialogFragment
-import com.kevintresuelo.novus.UpdateChecker
+import com.kevintresuelo.treble.utils.AppInfo
 import com.kevintresuelo.treble.utils.openUrl
 import com.kevintresuelo.treble.utils.toOrdinal
+import kotlinx.android.synthetic.main.list_item_contributor.view.*
 import java.util.*
 
 class AboutFragment : Fragment() {
@@ -74,12 +77,12 @@ class AboutFragment : Fragment() {
          * Opens an AlertDialog to show the recent changes of the app.
          */
         // TODO: Implement a system-wide and much more reliable changelog interface
+        val changelogDialog = MaterialAlertDialogBuilder(requireContext())
+            .setTitle(getString(R.string.changelog_title))
+            .setMessage(getString(R.string.changelog_message))
+            .setPositiveButton(getString(R.string.changelog_action), null)
         binding.faLlAppChangelog.setOnClickListener {
-            MaterialAlertDialogBuilder(requireContext())
-                .setTitle(getString(R.string.changelog_title))
-                .setMessage(getString(R.string.changelog_message))
-                .setPositiveButton(getString(R.string.changelog_action), null)
-                .show()
+            changelogDialog.show()
         }
 
         /**
