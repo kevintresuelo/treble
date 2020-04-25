@@ -20,6 +20,7 @@
 
 package com.kevintresuelo.treble.screens
 
+import android.app.Activity
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
@@ -36,6 +37,7 @@ import com.kevintresuelo.treble.checker.*
 import com.kevintresuelo.treble.databinding.FragmentCheckerBinding
 import com.kevintresuelo.treble.donate.DonateDialogFragment
 import com.kevintresuelo.adnoto.RateTheApp
+import com.kevintresuelo.treble.utils.openUrl
 
 
 class CheckerFragment : Fragment() {
@@ -192,6 +194,14 @@ class CheckerFragment : Fragment() {
                 binding.fcTvStatusSystemAsRootSubtitle.text = getString(R.string.checker_global_unsupported_subtitle)
                 binding.fcTvStatusSystemAsRootSupportingText.text = getString(R.string.checker_system_as_root_unsupported_supporting_text)
             }
+        }
+
+        /**
+         * Redirects users for more information regarding Project Treble to an
+         * Android Developers blog post re: Project Treble.
+         */
+        binding.fcMbStatusExplainerAction1.setOnClickListener {
+            openUrl(activity as Activity, "https://bit.ly/2zrPYDk", false)
         }
 
         /**

@@ -75,6 +75,11 @@
     <string name="checker_system_as_root_unsupported_supporting_text">Your device does not support system-as-root.</string>
     <string name="checker_system_as_root_unknown_supporting_text">There was an error reading the mounted file systems on your device.</string>
 
+    <string name="checker_explainer_title">What is Project Treble?</string>
+    <string name="checker_explainer_subtitle">Easier, faster, less costly Android OS updates</string>
+    <string name="checker_explainer_supporting_text_1">Project Treble separates the vendor implementation (device-specific, lower-level software written by silicon manufacturers) from the Android OS framework via a new vendor interface. In Android 7.x and earlier, no formal vendor interface exists so device makers must update large portions of the Android code to move a device to a newer version of Android.</string>
+    <string name="checker_explainer_supporting_text_2">With Treble, a new stable vendor interface provides access to the hardware-specific parts of Android, enabling device makers to deliver new Android releases simply by updating the Android OS framework—without any additional work required from the silicon manufacturers.</string>
+
     <string name="checker_donate_title">Donate</string>
     <string name="checker_donate_subtitle">Support the app development</string>
     <string name="checker_donate_supporting_text">Show your love and support for the app by donating. Donations help us maintain quality apps like this and develop more in the future.</string>
