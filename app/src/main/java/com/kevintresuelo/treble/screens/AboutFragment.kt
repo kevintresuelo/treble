@@ -75,7 +75,7 @@ class AboutFragment : Fragment() {
          */
         // TODO: Implement a system-wide and much more reliable changelog interface
         binding.faLlAppChangelog.setOnClickListener {
-            MaterialAlertDialogBuilder(context)
+            MaterialAlertDialogBuilder(requireContext())
                 .setTitle(getString(R.string.changelog_title))
                 .setMessage(getString(R.string.changelog_message))
                 .setPositiveButton(getString(R.string.changelog_action), null)
@@ -107,7 +107,7 @@ class AboutFragment : Fragment() {
          * Checks for available updates in the Google Play Store
          */
         binding.faLlAppUpdater.setOnClickListener {
-            val updateChecker = UpdateChecker(activity as Activity, activity!!.findViewById(android.R.id.content), true)
+            val updateChecker = UpdateChecker(activity as Activity, requireActivity().findViewById(android.R.id.content), true)
             updateChecker.checkForUpdates()
         }
 
