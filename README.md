@@ -12,6 +12,10 @@ Treble Check is an Android application that determines whether a device supports
 
 Pull requests are welcome! For major changes, kindly open an issue to discuss them first.
 
+If you would like to translate the app, please join the project [at this link][translate].
+
+[translate]: https://poeditor.com/join/project/oVDSgMHUwC
+
 ## Credits
 
  - Android Developers
