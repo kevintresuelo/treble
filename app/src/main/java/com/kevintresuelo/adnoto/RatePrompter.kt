@@ -27,10 +27,10 @@ import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.kevintresuelo.treble.R
 
-class RateTheApp(context: Context?, openThreshold: Int = 5) {
+class RatePrompter(context: Context?, openThreshold: Int = 5) {
 
     /**
-     * Initializes the RateTheApp AlertDialog with context and openThreshold, shows
+     * Initializes the RatePrompter AlertDialog with context and openThreshold, shows
      * the rate dialog if:
      * 1. it hasn't been dismissed yet; and
      * 2. the app has been opened n times as defined by [openThreshold].
