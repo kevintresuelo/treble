@@ -29,9 +29,11 @@ import android.view.animation.Transformation
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.kevintresuelo.adnoto.RatePrompter
 import com.kevintresuelo.treble.R
+import com.kevintresuelo.treble.billing.viewmodels.BillingViewModel
 import com.kevintresuelo.treble.checker.*
 import com.kevintresuelo.treble.databinding.FragmentCheckerBinding
 import com.kevintresuelo.treble.donate.DonateDialogFragment
@@ -52,6 +54,7 @@ class CheckerFragment : Fragment() {
          */
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_checker, container, false)
 
+
         /**
          * Notifies the host activity that this fragment has options menu.
          */
@@ -63,13 +66,19 @@ class CheckerFragment : Fragment() {
         RatePrompter(context, 3)
 
         /**
+         * Checks for new purchases of the user
+         */
+        val billingViewModel = ViewModelProvider(this).get(BillingViewModel::class.java)
+        billingViewModel.queryPurchases()
+
+        /**
          * Shows the Donate CardView if the user has opened the app thrice
          * already, and hasn't dismissed the card yet.
          */
         val prefsFileKey = "prompt_donate"
         val hasDismissedKey = "donate_card_dismissed"
         val timesAppOpenedKey = "donate_card_times_app_opened"
-        
+
         val sharedPreferences = activity?.getSharedPreferences(prefsFileKey, Context.MODE_PRIVATE)
         sharedPreferences?.let { sharedPrefs ->
             val isDonateCardAlreadyDismissed = sharedPrefs.getBoolean(hasDismissedKey, false)
@@ -78,7 +87,7 @@ class CheckerFragment : Fragment() {
                 if (timesAppOpened >= 3) {
                     binding.fcMcvStatusDonate.visibility = View.VISIBLE
                     binding.fcMbStatusDonateAction1.setOnClickListener {
-                        DonateDialogFragment().show(parentFragmentManager, DonateDialogFragment.TAG)
+                        DonateDialogFragment(billingViewModel).show(parentFragmentManager, DonateDialogFragment.TAG)
                         sharedPrefs.edit()?.putBoolean(hasDismissedKey, true)?.apply()
                         binding.fcMcvStatusDonate.visibility = View.GONE
                     }

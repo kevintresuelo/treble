@@ -30,12 +30,14 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.kevintresuelo.novus.UpdateChecker
 import com.kevintresuelo.treble.BuildConfig
 import com.kevintresuelo.treble.R
+import com.kevintresuelo.treble.billing.viewmodels.BillingViewModel
 import com.kevintresuelo.treble.databinding.DialogContributorsListBinding
 import com.kevintresuelo.treble.databinding.FragmentAboutBinding
 import com.kevintresuelo.treble.donate.DonateDialogFragment
@@ -231,7 +233,8 @@ class AboutFragment : Fragment() {
          * Opens the donation dialog
          */
         binding.faLlOthersDonate.setOnClickListener {
-            DonateDialogFragment().show(parentFragmentManager, DonateDialogFragment.TAG)
+            val billingViewModel = ViewModelProvider(this).get(BillingViewModel::class.java)
+            DonateDialogFragment(billingViewModel).show(parentFragmentManager, DonateDialogFragment.TAG)
         }
 
         /**
