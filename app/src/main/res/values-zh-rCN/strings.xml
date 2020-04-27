@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble Check"</string>
+    <string name="about_title">"关于"</string>
+    <string name="about_app_title">"关于此应用"</string>
+    <string name="about_app_birthday_pattern">"今天是这个应用的 %1$s 岁生日！"</string>
+    <string name="about_app_changelog_title">"更新日志"</string>
+    <string name="about_app_twitter_title">"在 Twitter 上关注此应用"</string>
+    <string name="about_app_github_title">"在 Github 上 Fork 源码"</string>
+    <string name="about_app_licenses_title">"开放源代码许可"</string>
+    <string name="about_app_updater_title">"检查更新"</string>
+    <string name="about_dev_title">"开发者"</string>
+    <string name="about_dev_info_detail_location_title">"菲律宾甲米地"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"今天是他的 %1$s 岁生日！"</string>
+    <string name="about_dev_email_title">"给我写封电子邮件"</string>
+    <string name="about_dev_facebook_title">"在 Facebook 上找到我"</string>
+    <string name="about_dev_instagram_title">"在 Instagram 上找到我"</string>
+    <string name="about_dev_twitter_title">"在 Twitter 上关注我"</string>
+    <string name="about_dev_telegram_title">"在 Telegram 上联系我"</string>
+    <string name="about_dev_google_play_title">"在 Google Play 上查看"</string>
+    <string name="about_others_title">"其它"</string>
+    <string name="about_others_rate_title">"在 Google Play 上评分"</string>
+    <string name="about_others_translate_title">"协助翻译此应用"</string>
+    <string name="about_others_donate_title">"捐助开发者"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"您的设备包含对 Project Treble 的支持，且包含 VNDK %1$s。"</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"您的设备包含对旧版 Project Treble 的支持，且包含 VNDK %1$s。"</string>
+    <string name="checker_treble_unsupported_supporting_text">"您的设备并未包含对 Project Treble 的支持。"</string>
+    <string name="checker_ab_title">"无缝系统更新"</string>
+    <string name="checker_ab_supported_supporting_text">"您的设备包含对无缝系统更新的支持，且存在 A/B 系统分区。"</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"您的设备包含对新版无缝系统更新的支持，且存在虚拟 A /B 系统分区。虚拟 A/B 分区可以根据需要自由地调整大小。"</string>
+    <string name="checker_ab_supported_detail_text">"您的设备可以在后台安装系统更新，尽量不干扰用户使用。安装更新所带来的风险也更小，因为如若更新出错，您的设备将自动切换回未安装更新的旧分区。"</string>
+    <string name="checker_ab_unsupported_supporting_text">"您的设备并未包含对无缝系统更新的支持，且仅存在 A 系统分区(A-only)。"</string>
+    <string name="checker_ab_unsupported_detail_text">"您的设备仅为系统准备了一个分区，因此在更新时，您的设备将暂时无法使用。当更新出错时，如若没有新的系统修复，您将无法使用您的设备。"</string>
+    <string name="checker_cpu_architecture_title">"CPU 体系架构"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"未知"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"您的设备使用基于 %1$s 架构的CPU。"</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"您的设备所使用的 CPU 架构未知。"</string>
+    <string name="checker_system_as_root_unknown_subtitle">"未知"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"您的设备包含对 System-as-root 分区布局的支持。"</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"您的设备并未包含对 system-as-root 分区布局的支持。"</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"读取设备上挂载的文件系统时出错。"</string>
+    <string name="checker_donate_title">"捐款"</string>
+    <string name="checker_donate_subtitle">"支持应用开发"</string>
+    <string name="checker_donate_supporting_text">"通过捐赠来表达您对这款应用的爱与支持。捐款将帮助我们保持这些应用的高质量，并在开发更多优秀的应用。"</string>
+    <string name="checker_donate_action_donate_title">"捐赠"</string>
+    <string name="checker_donate_action_dismiss_title">"忽略"</string>
+    <string name="checker_global_action_more_title">"更多信息"</string>
+    <string name="checker_global_action_less_title">"收起"</string>
+    <string name="checker_global_supported_subtitle">"支持"</string>
+    <string name="checker_global_unsupported_subtitle">"不支持"</string>
+    <string name="utils_error_cant_open_url">"您的设备上没有安装可以打开此 URL 的应用程序。"</string>
+    <string name="changelog_title">"更新日志"</string>
+    <string name="changelog_message">"v3.0.1 – 04/27/2020
+– [新增] 此应用的贡献者列表。非常感谢他们！
+– [新增] 丢失的 Project Treble 解释已经重新添加回来了
+– [新增] 对使用 64 位的 CPU 但却运行着 32 位系统的设备识别支持
+– [新增] 更新应用翻译
+– [修复] 在检测系统 System-as-root 时发生崩溃的问题
+– [修复] 导致文本边缘被剪切的 bug
+
+v3.0.0 – 04/20/2020
+– 全新设计
+– 增加对虚拟 A/B 系统分区的识别支持
+– 增加对 System-as-root 分区布局和 CPU 体系架构的检测支持
+– 通常改进与 bug 修复"</string>
+    <string name="updater_flexible_complete_prompt_message">"刚刚下载了一个更新。"</string>
+    <string name="updater_flexible_complete_prompt_action_message">"重新启动"</string>
+    <string name="updater_flexible_download_start_message">"更新正在下载中。"</string>
+    <string name="updater_feedback_up_to_date">"您正在运行最新版本的应用程序。"</string>
+    <string name="updater_feedback_in_progress">"更新已经在进行中。"</string>
+    <string name="updater_feedback_error">"更新时发生错误。请再试一次。"</string>
+    <string name="donate_title">"捐赠"</string>
+    <string name="donate_error_service_unavailable_message">"无法连接到支付服务器来处理捐款。请检查您的互联网连接，或在几分钟后再试一次。"</string>
+    <string name="donate_error_unknown_message">"捐赠发生了一个未知的错误。"</string>
+    <string name="donate_pending_message">"您的帐户上存在一笔仍处于等待中的支付购买。请与您的付款方式供应商协调完成您的购买。"</string>
+    <string name="donate_received_message">"捐赠收到啦！我们打心底里感谢您对我们的支持。"</string>
+    <string name="rate_title">"喜欢这个应用吗？"</string>
+    <string name="rate_message">"如果您喜欢使用 Treble Check，希望您可以花一点点时间在 Google Play 上给它个评论"</string>
+    <string name="rate_action_neutral">"稍后"</string>
+    <string name="rate_action_negative">"永不"</string>
+    <string name="rate_action_positive">"评分"</string>
+    <string name="rate_error_cant_open_url">"您的设备上没有安装可以打开此 URL 的应用程序。"</string>
+    <string name="checker_treble_detail_text">"Project Treble 通过一个 HIDL 接口，将 Android 系统和硬件抽象层分离开来。这样就可以在无需重新构建特定于硬件的代码的情况下升级 Android 系统。支持 Project Treble 的设备可以安装基于新版本 Android 的系统镜像，并体验其全新特性。"</string>
+    <string name="about_app_contributors_title">"贡献者"</string>
+    <string name="checker_explainer_title">"Project Treble 是什么？"</string>
+    <string name="checker_explainer_subtitle">"更易、更快、更低成本的 Android 系统更新"</string>
+    <string name="checker_explainer_supporting_text_1">"利用新的供应商接口，Project Treble 将供应商实现（由芯片制造商编写的设备专属底层软件）与 Android 操作系统框架分离开来。Android 7.x 及更早版本中没有正式的供应商接口，因此设备制造商必须更新大量 Android 代码才能将设备更新到新版 Android 系统。"</string>
+    <string name="checker_explainer_supporting_text_2">"Treble 提供了一个稳定的新供应商接口，供设备制造商访问 Android 代码中特定于硬件的部分，这样一来，设备制造商只需更新 Android 操作系统框架，即可跳过芯片制造商直接提供新的 Android 版本。"</string>
+    <string name="contributors_title">"非常感谢我们的贡献者！"</string>
+
+    <string name="contributors_description_translation">"%1$s翻译"</string>
+</resources>

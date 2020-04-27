@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble Check"</string>
+    <string name="about_title">"Info"</string>
+    <string name="about_app_title">"Info app"</string>
+    <string name="about_app_birthday_pattern">"Oggi è il %1$s compleanno dell'app!"</string>
+    <string name="about_app_changelog_title">"Cambiamenti"</string>
+    <string name="about_app_twitter_title">"Segui su Twitter"</string>
+    <string name="about_app_github_title">"Fork su Github"</string>
+    <string name="about_app_licenses_title">"Licenze"</string>
+    <string name="about_app_updater_title">"Controlla se ci sono aggiornamenti"</string>
+    <string name="about_dev_title">"Sviluppatore"</string>
+    <string name="about_dev_info_detail_location_title">"Cavite, Filippine"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"Oggi è il suo %1$s compleanno!"</string>
+    <string name="about_dev_email_title">"Scrivi un'email"</string>
+    <string name="about_dev_facebook_title">"Vedi su Facebook"</string>
+    <string name="about_dev_instagram_title">"Vedi su Instagram"</string>
+    <string name="about_dev_twitter_title">"Segui su Twitter"</string>
+    <string name="about_dev_telegram_title">"Contatta su Telegram"</string>
+    <string name="about_dev_google_play_title">"Vedi su Google Play"</string>
+    <string name="about_others_title">"Altri"</string>
+    <string name="about_others_rate_title">"Vota su Google Play"</string>
+    <string name="about_others_translate_title">"Traduci l'app"</string>
+    <string name="about_others_donate_title">"Sostieni lo sviluppo"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Il tuo dispositivo supporta Project Treble, incluso VDNK %1$s."</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Il tuo dispositivo supporta la versione legacy di Project Treble, incluso VDNK %1$s "</string>
+    <string name="checker_treble_unsupported_supporting_text">"Il tuo dispositivo non supporta Project Treble."</string>
+    <string name="checker_ab_title">"Aggiornamenti Silenziosi"</string>
+    <string name="checker_ab_supported_supporting_text">"Il tuo dispositivo supporta gli Aggiornamenti Silenziosi e ha una partizione di sistema A/B."</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"Il tuo dispositivo supporta i nuovi Aggiornamenti Silenziosi e ha una partizione virtuale di sistema A/B. Le partizioni virtuali A/B possono essere ridimensionate liberamente in base a quanto spazio serve."</string>
+    <string name="checker_ab_supported_detail_text">"Il tuo dispositivo può installare aggiornamenti di sistema in background senza interruzioni dell'operatività. Installare aggiornamenti inoltre è meno rischioso perché, nel caso qualcosa vada storto, il dispositivo può essere riavviato usando la vecchia partizione."</string>
+    <string name="checker_ab_unsupported_supporting_text">"Il tuo dispositivo non supporta gli Aggiornamenti Silenziosi e ha solamente la partizione di sistema A"</string>
+    <string name="checker_ab_unsupported_detail_text">"Il tuo dispositivo usa solo una partizione di sistema, quindi non è utilizzabile mentre si installa un aggiornamento. Eventuali errori in fase di aggiornamento inoltre posso rendere il dispositivo inutilizzabile."</string>
+    <string name="checker_cpu_architecture_title">"Architettura CPU"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"Sconosciuto"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"Il tuo dispositivo usa una CPU con architettura %1$s."</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Il tuo dispositivo usa un'architettura di sistema sconosciuta."</string>
+    <string name="checker_system_as_root_unknown_subtitle">"Sconosciuto"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"Il tuo sistema supporta system-as-root."</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"Il tuo dispositivo non supporta system-as-root."</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"Si è verificato un errore nella lettura del file system montato sul tuo dispositivo."</string>
+    <string name="checker_donate_title">"Donazione"</string>
+    <string name="checker_donate_subtitle">"Sostieni lo sviluppo dell'app"</string>
+    <string name="checker_donate_supporting_text">"Dimostra la tua gratitudine sostenendo l'app con una donazione. Le donazioni ci aiutano a mantenere elevata la qualità di app come questa e a svilupparne altre in futuro."</string>
+    <string name="checker_donate_action_donate_title">"Donazione"</string>
+    <string name="checker_donate_action_dismiss_title">"Chiudi"</string>
+    <string name="checker_global_action_more_title">"Più info"</string>
+    <string name="checker_global_action_less_title">"Meno"</string>
+    <string name="checker_global_supported_subtitle">"Supportato"</string>
+    <string name="checker_global_unsupported_subtitle">"Non supportato"</string>
+    <string name="utils_error_cant_open_url">"Sul tuo dispositivo non è presente nessuna app in grado di aprire questo URL."</string>
+    <string name="changelog_title">"Cambiamenti"</string>
+
+    <string name="changelog_message">"v3.0.0 – 04/20/2020
+– design aggiornato
+– aggiunto il supporto all'identificazione delle partizioni virtuali A/B
+– aggiunto il supporto per la verifica dell'architettura della CPU e di system-as-root
+– migliorie generali e correzione bug"</string>
+    <string name="updater_flexible_complete_prompt_message">"Un aggiornamento è appena stato scaricato."</string>
+    <string name="updater_flexible_complete_prompt_action_message">"Riavvia"</string>
+    <string name="updater_flexible_download_start_message">"L'aggiornamento è in fase di scaricamento."</string>
+    <string name="updater_feedback_up_to_date">"L'app è già aggiornata all'ultima versione."</string>
+    <string name="updater_feedback_in_progress">"Un aggiornamento è già in corso."</string>
+    <string name="updater_feedback_error">"Si è verificato un errore durante l'aggiornamento. Ritenta."</string>
+    <string name="donate_title">"Donazione"</string>
+    <string name="donate_error_service_unavailable_message">"Connessione al server per l'addebito della donazione non riuscita. Verifica lo stato della tua connessione internet e ritenta tra qualche minuto."</string>
+    <string name="donate_error_unknown_message">"Si è verificato un errore con la donazione."</string>
+    <string name="donate_pending_message">"C'è un pagamento in sospeso sul tuo account. Vi preghiamo di contattare la vostra banca per completare il pagamento."</string>
+    <string name="donate_received_message">"Donazione ricevuta! Vi mandiamo un sentito grazie dal fondo dei nostri cuori per il vostro supporto."</string>
+    <string name="rate_title">"Ti piace l'app?"</string>
+    <string name="rate_message">"Se apprezzi l'app Treble Check, lasciaci una recensione su Google Play."</string>
+    <string name="rate_action_neutral">"Più tardi"</string>
+    <string name="rate_action_negative">"Mai"</string>
+    <string name="rate_action_positive">"Vota"</string>
+    <string name="rate_error_cant_open_url">"Non hai nessuna app installata per aprire questo URL"</string>
+    <string name="checker_treble_detail_text">"Project Treble divide il layer dedicato al Sistema Operativo Android da quello di astrazione hardware attraverso un interfaccia HDL. Ciò permette di aggiornare il sistema senza dover ricostruire il codice specifico di ogni hardware. I dispositivi che supportano Project Treble quindi possono installare immagini di sistema basate su nuove versioni di Android e sfruttarne le nuove funzionalità."</string>
+    <string name="checker_explainer_title">"Cos'è Project Treble?"</string>
+    <string name="checker_explainer_subtitle">"Aggiornamenti di Android più veloci e meno onerosi"</string>
+    <string name="checker_explainer_supporting_text_1">"Project Treble separa l'implementazione vendor (specifica per ogni dispositivo, fornita dai produttori di processori, che sono i vendor) dal framework di Android grazie ad una nuova inferfaccia vendor. Fino ad Android 7.x, quest'interfaccia non esisteva e quindi per aggiornare Android occorreva eseguire modifiche su una gran mole di codice."</string>
+    <string name="checker_explainer_supporting_text_2">"Con Treble, una nuova interfaccia permette ad Android di accedere ai driver e alle parti di codice specifiche, permettendo ai produttori di aggiornare Android molto più facilmente, senza ulteriore lavoro dei produttori di processori."</string>
+</resources>

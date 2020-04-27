@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble Check"</string>
+    <string name="about_title">"О приложении"</string>
+    <string name="about_app_title">"О приложении"</string>
+    <string name="about_app_birthday_pattern">"Сегодня %1$s-й день рождения проекта!"</string>
+    <string name="about_app_changelog_title">"Список изменений"</string>
+    <string name="about_app_twitter_title">"Подписаться на Twitter проекта"</string>
+    <string name="about_app_github_title">"Проект на Github"</string>
+    <string name="about_app_licenses_title">"Лицензии"</string>
+    <string name="about_app_updater_title">"Проверить наличие обновлений"</string>
+    <string name="about_dev_title">"Разработчик"</string>
+    <string name="about_dev_info_detail_location_title">"Кавите, Филиппины"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"Сегодня %1$s-й день рождения разработчика!"</string>
+    <string name="about_dev_email_title">"Написать на e-mail"</string>
+    <string name="about_dev_facebook_title">"Посетить страницу на Facebook"</string>
+    <string name="about_dev_instagram_title">"Посетить страницу на Instagram"</string>
+    <string name="about_dev_twitter_title">"Подписаться на Twitter"</string>
+    <string name="about_dev_telegram_title">"Написать сообщение в Telegram"</string>
+    <string name="about_dev_google_play_title">"Проверить проект на Google Play"</string>
+    <string name="about_others_title">"Другое"</string>
+    <string name="about_others_rate_title">"Оценить проект на Google Play"</string>
+    <string name="about_others_translate_title">"Помочь в переводе приложения"</string>
+    <string name="about_others_donate_title">"Поддержать разработчиков"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Ваше устройство поддерживает Project Treble вместе с VNDK %1$s."</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Ваше устройство поддерживает устаревшию весию Project Treble вместе с VNDK %1$s."</string>
+    <string name="checker_treble_unsupported_supporting_text">"Ваше устройство не поддерживает Project Treble."</string>
+    <string name="checker_ab_title">"Бесшовные обновления системы"</string>
+    <string name="checker_ab_supported_supporting_text">"Ваше устройство поддерживает бесшовные обновления системы, а так же имеет системные разделы A/B."</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"Ваше устройство поддерживает новые бесшовные обновления системы, а так же имеет виртуальный A/B системный раздел, из-за чего размеры A и B могут быть свободно изменены в зависимости от необходимого пространства."</string>
+    <string name="checker_ab_supported_detail_text">"Ваше устройство может устанавливать системные обновления в фоновом режиме, что приводит к минимальному прерыванию работы пользователя. Установка обновлений также менее рискованна, поскольку устройство может перезагрузиться обратно в старый раздел и оставаться пригодным для использования, как только что-то пойдет не так с обновлением."</string>
+    <string name="checker_ab_unsupported_supporting_text">"Ваше устройство не поддерживает бесшовные обновления системы и имеет только A раздел."</string>
+    <string name="checker_ab_unsupported_detail_text">"Ваше устройство использует только один раздел для системы, в результате чего устройство временно не может быть использовано во время обновления. Неудачные обновления также могут привести к тому, что устройство станет непригодным для использования до тех пор, пока не будет применено исправление."</string>
+    <string name="checker_cpu_architecture_title">"Архитектура ЦП"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"Неизвестно"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"Ваше устройство имеет процессор с %1$s архитектурой."</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Ваше устройство использует процессор с неизвестной архитектурой."</string>
+    <string name="checker_system_as_root_unknown_subtitle">"Неизвестно"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"Ваше устройство поддерживает system-as-root."</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"Ваше устройство не поддерживает system-as-root."</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"Произошла ошибка при чтении монтированных файловых систем на вашем устройстве."</string>
+    <string name="checker_donate_title">"Пожертвовать деньги для проекта"</string>
+    <string name="checker_donate_subtitle">"Поддержите разработку приложения"</string>
+    <string name="checker_donate_supporting_text">"Проявите свою любовь и поддержку для приложения через пожертвование. Пожертвования помогают нам поддерживать качественные приложения, подобные этому, и развивать их в будущем."</string>
+    <string name="checker_donate_action_donate_title">"Пожертвовать"</string>
+    <string name="checker_donate_action_dismiss_title">"Отклонить"</string>
+    <string name="checker_global_action_more_title">"Подробнее"</string>
+    <string name="checker_global_action_less_title">"Свернуть"</string>
+    <string name="checker_global_supported_subtitle">"Поддерживается"</string>
+    <string name="checker_global_unsupported_subtitle">"Не поддерживается"</string>
+    <string name="utils_error_cant_open_url">"На вашем устройстве не установлено приложение, которое может открыть этот URL-адрес."</string>
+    <string name="changelog_title">"История изменений"</string>
+    <string name="changelog_message">"v3.0.1 – 27.04.2020
+  Добавлено:
+– список людей, поддержавших проект, большое им спасибо!
+– поддержка по Project Treble вернулась
+– поддержка проверки 64-битной ЦП с 32-битной ОС
+– обновлённый перевод приложения
+  Исправлено:
+– баг, возникающий при проверке статуса \"system-as-root\"
+– баг, приводящий к обрезание текста по краям
+
+v3.0.0 – 20.04.2020
+– обновлен дизайн
+– добавлена поддержка идентификации виртуальных A/B разделов
+– добавлена поддержка проверки статуса \"system-as-root\" и архитектуры ЦП
+– общие улучшения и исправления ошибок"</string>
+    <string name="updater_flexible_complete_prompt_message">"Обновление загружено."</string>
+    <string name="updater_flexible_complete_prompt_action_message">"Перезапустить"</string>
+    <string name="updater_flexible_download_start_message">"Обновление загружается."</string>
+    <string name="updater_feedback_up_to_date">"Вы используете последнюю версию приложения."</string>
+    <string name="updater_feedback_in_progress">"Обновление уже идет полным ходом."</string>
+    <string name="updater_feedback_error">"При попытке обновления произошла ошибка. Пожалуйста, попробуйте еще раз."</string>
+    <string name="donate_title">"Пожертвовать"</string>
+    <string name="donate_error_service_unavailable_message">"Не удалось установить соединение с биллинговым сервером для обработки пожертвования. Пожалуйста, проверьте подключение к интернету или повторите попытку через несколько минут."</string>
+    <string name="donate_error_unknown_message">"При пожертвовании произошла неизвестная ошибка."</string>
+    <string name="donate_pending_message">"Покупка на вашем аккаунте все еще не завершена. Пожалуйста, свяжитесь с вашим поставщиком оплаты, чтобы завершить покупку."</string>
+    <string name="donate_received_message">"Пожертвование получено! От всего сердца благодарим вас за проявленную поддержку."</string>
+    <string name="rate_title">"Нравится приложение?"</string>
+    <string name="rate_message">"Если вам нравится использовать Treble Check, пожалуйста, найдите минутку и оставьте отзыв в Google Play."</string>
+    <string name="rate_action_neutral">"Позже"</string>
+    <string name="rate_action_negative">"Никогда"</string>
+    <string name="rate_action_positive">"Оценить"</string>
+    <string name="rate_error_cant_open_url">"На вашем устройстве не установлено приложение, которое может открыть этот URL-адрес."</string>
+    <string name="checker_treble_detail_text">"Project Treble разделяет ОС Android и уровень аппаратной абстракции через интерфейс HIDL. Это позволяет обновить ОС Android без перестройки аппаратного кода, специфичного для конкретного устройства. Устройства, поддерживающие Project Treble, могут затем устанавливать системные образы, основанные на более новых версиях Android, и использовать новые функции, которые поставляются вместе с ним."</string>
+    <string name="about_app_contributors_title">"Люди, поддержавшие проект"</string>
+    <string name="checker_explainer_title">"Что такое Project Treble? "</string>
+    <string name="checker_explainer_subtitle">"Более простые, быстрые и безопасные обновления Android OC"</string>
+    <string name="checker_explainer_supporting_text_1">"Project Treble отделяет реализацию вендора (специфичное для устройства, низкоуровневое программное обеспечение, написанное производителями аппаратной части устройства) от платформы ОС Android через новый интерфейс поставщика, что ускоряет, облегчает и делает более безопасной установку обновлений Android. В Android 7.x и более ранних версиях интерфейс официального поставщика отсутствует, поэтому производители устройств должны обновить большие части кода Android, чтобы переместить устройство на более новую версию Android."</string>
+    <string name="checker_explainer_supporting_text_2">"С Treble новый стабильный интерфейс вендора обеспечивает доступ к аппаратным частям Android, позволяя производителям устройств выпускать новые версии Android просто путем обновления платформы Android ОС - без каких-либо дополнительных действий, требуемых от производителей аппаратной части устройства."</string>
+    <string name="contributors_title">"Большое спасибо людям, поддержавшим проект!"</string>
+
+    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
+
+Example: English translations, Spanish translations, etc. -->
+    <string name="contributors_description_translation">"%1$s переводы"</string>
+</resources>

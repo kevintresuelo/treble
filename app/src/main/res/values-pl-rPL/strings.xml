@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">"O aplikacji"</string>
+    <string name="checker_treble_title">"Projekt Treble"</string>
+    <string name="checker_ab_title">"Bezproblemowe aktualizacje systemu (Seamless System Updates)"</string>
+    <string name="checker_donate_title">"Przekaż darowiznę"</string>
+    <string name="checker_donate_action_donate_title">"Podaruj"</string>
+    <string name="checker_donate_action_dismiss_title">"Odrzuć"</string>
+    <string name="checker_global_supported_subtitle">"Wspierane"</string>
+    <string name="checker_global_unsupported_subtitle">"Niewspierane"</string>
+    <string name="donate_title">"Podaruj"</string>
+    <string name="rate_action_negative">"Nigdy"</string>
+    <string name="rate_action_positive">"Oceń"</string>
+    <string name="checker_explainer_title">"Czym jest Projekt Treble?"</string>
+    <string name="checker_explainer_subtitle">"Łatwiejsze, szybsze i mniej kosztowne aktualizacje systemu Android"</string>
+    <string name="checker_explainer_supporting_text_1">"Projekt Treble oddziela implementację dostawcy (specyficzne dla urządzenia, oprogramowanie niższego poziomu napisane przez producentów podzespołów) od systemu operacyjnego Android poprzez nowy interfejs dostawcy. W Androidzie 7.x i wcześniejszych nie ma formalnego interfejsu dostawcy, więc producenci urządzeń muszą aktualizować duże fragmenty kodu Androida, aby przenieść urządzenie do nowszej wersji Androida."</string>
+    <string name="checker_explainer_supporting_text_2">"Dzięki Treble nowy stabilny interfejs dostawcy zapewnia dostęp do specyficznych dla sprzętu części systemu Android, umożliwiając producentom urządzeń dostarczanie nowych wersji Androida po prostu przez aktualizację struktury systemu Android - bez dodatkowych prac wymaganych od producentów podzespołów."</string>
+</resources>

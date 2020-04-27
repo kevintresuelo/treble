@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble ellenőrzése"</string>
+    <string name="about_title">"A programról"</string>
+    <string name="about_app_title">"A programról"</string>
+    <string name="about_app_birthday_pattern">"Ma van az alkalmazás %1$s. születésnapja!"</string>
+    <string name="about_app_changelog_title">"Változáslista"</string>
+    <string name="about_app_twitter_title">"Követés a Twitteren"</string>
+    <string name="about_app_github_title">"Github fork"</string>
+    <string name="about_app_licenses_title">"Licencek"</string>
+    <string name="about_app_updater_title">"Frissítés ellenőrzése"</string>
+    <string name="about_dev_title">"Fejlesztő"</string>
+    <string name="about_dev_info_detail_location_title">"Cavite, Philippines"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"Ma van a %1$s. születésnapja!"</string>
+    <string name="about_dev_email_title">"Email írása"</string>
+    <string name="about_dev_facebook_title">"Facebook oldal megtekintése"</string>
+    <string name="about_dev_instagram_title">"Instagram oldal megtekintése"</string>
+    <string name="about_dev_twitter_title">"Követés a Twitteren"</string>
+    <string name="about_dev_telegram_title">"Üzenet Telegramon"</string>
+    <string name="about_dev_google_play_title">"Google Play oldal"</string>
+    <string name="about_others_title">"Egyebek"</string>
+    <string name="about_others_rate_title">"Értékelés a Google áruházban"</string>
+    <string name="about_others_translate_title">"Alkalmazás honosítása"</string>
+    <string name="about_others_donate_title">"Fejlesztő támogatása"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Az eszköz tartalmazza a Project Treble támogatását. A VNDK %1$s szintén mellékelve van."</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Az eszköz támogatja a Project Treble régebbi verzióját. A VNDK %1$s szintén mellékelve van."</string>
+    <string name="checker_treble_unsupported_supporting_text">"Az eszköze nem támogatja a Treble Projektet."</string>
+    <string name="checker_ab_title">"Zökkenőmentes rendszerfrissítések"</string>
+    <string name="checker_ab_supported_supporting_text">"A készülék támogatja a zökkenőmentes (Seamless) rendszerfrissítéseket, és létezik A/B rendszerpartíció."</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"A készülék támogatja az új zökkenőmentes (Seamless) rendszerfrissítéseket, és a virtuális A/B rendszerpartíciók léteznek. A virtuális A/B partíciók  szabadon átméretezhetőek, a szükséges hely mennyiségétől függően."</string>
+    <string name="checker_ab_supported_detail_text">"Az eszköz a rendszerfrissítéseket a háttérben telepítheti, ami minimális felhasználói beavatkozást igényel. A frissítések telepítése kevésbé kockázatos, mivel az eszköz újraindulhat a régi állapottal, és használható marad, ha valami rosszul sikerülne frissítés közben."</string>
+    <string name="checker_ab_unsupported_supporting_text">"A készülék nem támogatja a zökkenőmentes (Seamless) rendszerfrissítéseket, és csak A-rendszerpartíció létezik."</string>
+    <string name="checker_ab_unsupported_detail_text">"Az eszköz csak egyetlen partíciót biztosít a rendszer számára, ennek eredményeként az eszköz ideiglenesen nem használható frissítés közben. Egy sikertelen frissítés az eszközt használhatatlanná teheti a szükséges javítások alkalmazásáig."</string>
+    <string name="checker_cpu_architecture_title">"CPU architektúra"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"Ismeretlen"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"Az ön eszköze %1$s architektúrájú CPU-t tartalmaz."</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Az ön eszköze ismeretlen architektúrájú CPU-t tartalmaz."</string>
+    <string name="checker_system_as_root_unknown_subtitle">"Ismeretlen"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"Az ön eszköze támogatja a system-as-root módot."</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"Az ön eszköze nem támogatja a system-as-root módot. "</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"Hiba történt az eszköz felcsatolt fájlrendszereinek olvasása közben."</string>
+    <string name="checker_donate_title">"Támogatás"</string>
+    <string name="checker_donate_subtitle">"Az alkalmazás fejlesztésének támogatása"</string>
+    <string name="checker_donate_supporting_text">"Mutassa ki elismerését és támogatását az alkalmazás iránt adományozással. Az adományok segítenek fenntartani a minőségi alkalmazásokat, és a további fejlesztéseket."</string>
+    <string name="checker_donate_action_donate_title">"Támogatás"</string>
+    <string name="checker_donate_action_dismiss_title">"Mégsem"</string>
+    <string name="checker_global_action_more_title">"További infók"</string>
+    <string name="checker_global_action_less_title">"Kevesebb"</string>
+    <string name="checker_global_supported_subtitle">"Támogatva"</string>
+    <string name="checker_global_unsupported_subtitle">"Nincs támogatva"</string>
+    <string name="utils_error_cant_open_url">"Nincs telepítve olyan alkalmazás, amely megnyithatná ezt az URL-t."</string>
+    <string name="changelog_title">"Változáslista"</string>
+    <string name="changelog_message">"v3.0.1 – 2020.04.27
+– [új] az alkalmazás fejlesztésében résztvevők névsora, óriási köszönet nekik!
+– [új] a Project Treble magyarázata visszatért
+– [új] 64-bites CPU 32-bites OS melletti felismerésének támogatása
+– [új] frissített honosítások
+– [fixálva] összeomlás a rendszer alapértelmezett (system-as-root) állapotának észlelésekor
+– [fixálva] hiba, ami a szöveg szélek levágását eredményezte
+
+v3.0.0 – 2020.04.20
+– frissített design
+– Virtuális A/B partíciók azonosításának támogatása
+– System-as-root és CPU architektúra ellenőrzésének támogatása
+– általános fejlesztések és hibajavítások"</string>
+    <string name="updater_flexible_complete_prompt_message">"Nemrég letöltött egy frissítést."</string>
+    <string name="updater_flexible_complete_prompt_action_message">"Újraindítás"</string>
+    <string name="updater_flexible_download_start_message">"A frissítés letöltése folyamatban."</string>
+    <string name="updater_feedback_up_to_date">"Az alkalmazás naprakész."</string>
+    <string name="updater_feedback_in_progress">"A frissítés folyamatban van."</string>
+    <string name="updater_feedback_error">"Hiba történt frissítés közben. Próbálja újra."</string>
+    <string name="donate_title">"Támogatás"</string>
+    <string name="donate_error_service_unavailable_message">"Az adomány feldolgozása közben nem sikerült kapcsolatot létesíteni a szerverrel. Ellenőrizze internetkapcsolatát, vagy próbálkozzon ismételten néhány perc múlva."</string>
+    <string name="donate_error_unknown_message">"Ismeretlen hiba történt támogatás közben."</string>
+    <string name="donate_pending_message">"A számláján történt vásárlás függőben van. Egyeztesse a fizetési módot szolgáltatójával a vásárlás befejezéséhez."</string>
+    <string name="donate_received_message">"Adományát befogadtuk! Szívből köszönjük a támogatást."</string>
+    <string name="rate_title">"Kedveli az alkalmazást?"</string>
+    <string name="rate_message">"Ha szívesen használja a Treble Check alkalmazástt, szánjon rá egy percet, és véleményezze a Google Playen."</string>
+    <string name="rate_action_neutral">"Később"</string>
+    <string name="rate_action_negative">"Soha"</string>
+    <string name="rate_action_positive">"Értékelés"</string>
+    <string name="rate_error_cant_open_url">"Nincs telepítve olyan alkalmazás, amely megnyithatná ezt az URL-t."</string>
+    <string name="checker_treble_detail_text">"A Project Treble a HIDL interfész segítségével szétválasztja az Android operációs rendszert és a hardver absztrakciós réteget. Ez lehetővé teszi az Android OS frissítését a hardver-specifikus kódok újratelepítése nélkül. A Project Treble-t támogató eszközök telepíthetnek olyan rendszerképeket, amelyek az Android újabb verzióin alapulnak, ezáltal új funkciókat tapasztalhatnak meg."</string>
+    <string name="about_app_contributors_title">"Közreműködők"</string>
+    <string name="checker_explainer_title">"Mi az a Project Treble?"</string>
+    <string name="checker_explainer_subtitle">"Könnyebb, gyorsabb, költséghatékonyabb Android OS frissítések"</string>
+    <string name="checker_explainer_supporting_text_1">"A Project Treble egy új felülettel különválasztja az eszközgyártók egyedi megoldásait (az eszközspecifikus, a lapkagyártók által készített alacsonyabb szintű szoftvereket) az Android operációs rendszer keretrendszerétől. Az Android 7.x és előző verziókban nem létezik ilyen hivatalos felület, így az eszközgyártóknak frissíteniük kell az Android kód nagy részét, hogy egy eszközt az Android újabb verziójára állítsanak át."</string>
+    <string name="checker_explainer_supporting_text_2">"A Treble stabil hozzáférést biztosít az Android hardver-specifikus részeihez és lehetővé teszi az eszközgyártók számára, hogy új Android-verziókat szállítsanak egyszerűen az Android OS-keretrendszer frissítésével - anélkül, hogy a lapkagyártóknak további munkát kellene végezniük."</string>
+    <string name="contributors_title">"Óriási köszönet a közreműködőknek!"</string>
+
+    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
+
+Example: English translations, Spanish translations, etc. -->
+    <string name="contributors_description_translation">"%1$s honosítás"</string>
+</resources>

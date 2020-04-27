@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble denetleme"</string>
+    <string name="about_title">"Hakkında"</string>
+    <string name="about_app_title">"Uygulama Hakkında"</string>
+    <string name="about_app_birthday_pattern">"Bugün uygulamanın %1$s inci doğum günü!"</string>
+    <string name="about_app_changelog_title">"Değişim günlüğü"</string>
+    <string name="about_app_twitter_title">"Twitter'da takip et"</string>
+    <string name="about_app_github_title">"Github'da klonla"</string>
+    <string name="about_app_licenses_title">"Lisanslar"</string>
+    <string name="about_app_updater_title">"Güncellemeler için denetle"</string>
+    <string name="about_dev_title">"Geliştirici"</string>
+    <string name="about_dev_info_detail_location_title">"Cavite, Filipinler"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"Bu gün geliştiricinin %1$s inci doğum günü!"</string>
+    <string name="about_dev_email_title">"Email yazın"</string>
+    <string name="about_dev_facebook_title">"Facebook'ta ziyaret et"</string>
+    <string name="about_dev_instagram_title">"Instagram'da ziyaret et"</string>
+    <string name="about_dev_twitter_title">"Twitter'da takip et"</string>
+    <string name="about_dev_telegram_title">"Telegram'dan mesaj gönder"</string>
+    <string name="about_dev_google_play_title">"Google Play'e göz atın"</string>
+    <string name="about_others_title">"Diğer"</string>
+    <string name="about_others_rate_title">"Google Play'de değerlendir"</string>
+    <string name="about_others_translate_title">"Uygulamayı tercüme et"</string>
+    <string name="about_others_donate_title">"Gelişmeyi destekle"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Cihazınız Project Treble kapsamı altında. Beraberinde VNDK %1$s de var."</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Cihazınız Project Treble'ın eski bir sürümü tarafından desteklenmekte. Beraberinde VNDK %1$s de var."</string>
+    <string name="checker_treble_unsupported_supporting_text">"Cihazınız Project Treble kapsamında değildir."</string>
+    <string name="checker_ab_title">"Kusursuz Sistem Güncellemeleri"</string>
+    <string name="checker_ab_supported_supporting_text">"Cihazınızda Kusursuz Sistem Güncellemeleri destekleniyor ve A/B sistem bölümleri olduğu tespit edildi."</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"Cihazınızda Kusursuz Sistem Güncellemelerinin yeni sürümü bulunuyor ve sanal A/B sistem bölümlerinin olduğu tespit edildi. Sanal A/B bölümleri ihtiyaç duyulan alana göre yeniden boyutlandırılabilir."</string>
+    <string name="checker_ab_supported_detail_text">"Cihazınız sistem güncellemelerini arkaplanda, kullanıcıya en az rahatsızlık verecek şekilde yükleyebilir. Güncellemeleri yüklemek ise daha az risklidir çünkü bir sorun çıkması halinde cihazınız eski sistem bölümünden tekrar başlayabilir."</string>
+    <string name="checker_ab_unsupported_supporting_text">"Cihazınızd Kusursuz Sistem Güncellemeleri desteklenmiyor ve sadece A sistem bölümü var."</string>
+    <string name="checker_ab_unsupported_detail_text">"Cihazınız sistem için yalnızca tek bölüm kullanıyor, bu da cihazınızı güncelleme yüklenirken geçici olarak kullanılamaz hale getiriyor. Hatalı bir güncelleme cihazınızı siz düzeltene kadar kullanılmaz hale getirebilir."</string>
+    <string name="checker_cpu_architecture_title">"İşlemci Mimarisi"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"Bilinmeyen"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"Cihazınız %1$s mimarili bir işlemci kullanıyor."</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Cihazınız bilinmeyen mimariye sahip bir işlemci kullanıyor. "</string>
+    <string name="checker_system_as_root_unknown_subtitle">"Bilinmeyen"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"Cihazınız system-as-root desteği içeriyor."</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"Cihazınız system-as-root desteği içermiyor."</string>
+    <string name="checker_donate_title">"Bağış"</string>
+    <string name="checker_donate_subtitle">"Uygulama geliştirmeyi destekle"</string>
+    <string name="checker_donate_supporting_text">"Bağış yaparak uygulama için desteğini ve sevgini göster. Bağışlar bizim bunun gibi kaliteli uygulamaları sürdürmemizi ve gelecekte daha fazlasını geliştirmemizi sağlar."</string>
+    <string name="checker_donate_action_donate_title">"Bağış Yap"</string>
+    <string name="checker_donate_action_dismiss_title">"Reddet"</string>
+    <string name="checker_global_action_more_title">"Daha fazla bilgi"</string>
+    <string name="checker_global_action_less_title">"Daha az"</string>
+    <string name="checker_global_supported_subtitle">"Destekli"</string>
+    <string name="checker_global_unsupported_subtitle">"Desteklemiyor"</string>
+    <string name="utils_error_cant_open_url">"Cihazınızda bu URL'yi açabilecek bir uygulama bulunmuyor."</string>
+    <string name="changelog_title">"Değişim günlüğü"</string>
+
+    <string name="changelog_message">"V3.0.0 - 20/04/2020
+-yenilenmiş tasarım
+-sanal A/B bölümlerini tanımlamak için destek eklendi
+- System-as-root ve işlemci mimarisini kontrol etmek için destek eklendi
+-genel geliştirmeler ve hata düzeltmeleri yapıldı"</string>
+    <string name="updater_flexible_complete_prompt_message">"Bir güncelleme indirildi."</string>
+    <string name="updater_flexible_complete_prompt_action_message">"Yeniden başlat"</string>
+    <string name="updater_flexible_download_start_message">"Güncelleme şu an yükleniyor."</string>
+    <string name="updater_feedback_up_to_date">"Uygulamanın son sürümünü çalıştırıyorsunuz"</string>
+    <string name="updater_feedback_in_progress">"Güncelleme zaten devam ediyor."</string>
+    <string name="updater_feedback_error">"Güncelleme yapılırken bir hata oluştu. Lütfen tekrar deneyin."</string>
+    <string name="donate_title">"Bağış Yap"</string>
+    <string name="donate_error_service_unavailable_message">"Bağış yaparken ödeme sunucusuna bağlantı kurulamadı. İnternet bağlantınızı kontrol edin ya da daha sonra tekrar deneyin."</string>
+    <string name="donate_error_unknown_message">"Bağış yaparken bilinmeyen bir hata oluştu."</string>
+    <string name="donate_pending_message">"Hesabınızda bir bağış hala bekleniyor. Bağışı tamamlamak için ödeme yöntemi sağlayıcınızla iletişime geçin."</string>
+    <string name="donate_received_message">"Bağışınızı aldık! Yüreğimizin en derinlerinden, bize olan desteğiniz için size teşekkür ediyoruz."</string>
+    <string name="rate_title">"Uygulamayı sevdin mi?"</string>
+    <string name="rate_message">"Eğer Treble Check uygulamasını sevdiysen lütfen bir saniyeni ayır ve Google Play'de puan ver."</string>
+    <string name="rate_action_neutral">"Daha sonra"</string>
+    <string name="rate_action_negative">"Asla"</string>
+    <string name="rate_action_positive">"Oyla"</string>
+    <string name="rate_error_cant_open_url">"Cihazınızda bu URL'yi açabilecek bir uygulama bulunmuyor."</string>
+    <string name="checker_treble_detail_text">"Project Treble, Android işletim sistemini ve donanım soyutlama katmanını, HIDL arayüzü vasıtasıyla ayırır. Bu Android işletim sisteminin donanıma uygun kodlanmasına gerek duymadan güncellenebilmesini sağlar. Project Treble kapsamındaki cihazlar Android'in  yeni sürümlerindeki sistem görüntülerini yükleyip yeni özelliklerini deneyimleyebilirler."</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">"Sobre"</string>
+    <string name="checker_treble_title">"Projeto Treble"</string>
+    <string name="checker_ab_title">"Atualizações Simples"</string>
+    <string name="checker_donate_title">"Doar"</string>
+    <string name="checker_donate_action_donate_title">"Doar"</string>
+    <string name="checker_donate_action_dismiss_title">"Dispensar"</string>
+    <string name="checker_global_supported_subtitle">"Suportado"</string>
+    <string name="checker_global_unsupported_subtitle">"Não Suportado"</string>
+    <string name="donate_title">"Doar"</string>
+    <string name="rate_action_negative">"Nunca"</string>
+    <string name="rate_action_positive">"Avaliar"</string>
+    <string name="checker_explainer_title">"O que é Projeto Treble?"</string>
+    <string name="checker_explainer_subtitle">"Atualizações do Android mais fáceis, mais rápidas e mais econômicas"</string>
+    <string name="checker_explainer_supporting_text_1">"Projeto Treble separa o vendor (parte do software específico do dispositivo, escrito pela fabricante) da estrutura do sistema operacional por meio de uma nova partição de vendor. No Android 7.x e versões anteriores não há partição formal com vendor, assim as fabricantes de dispositivos precisam atualizar grandes partes do código do Android para mover um dispositivo para uma versão mais recente do Android."</string>
+    <string name="checker_explainer_supporting_text_2">"Com Treble, uma nova partição de vendor estável fornece acesso às partes específicas do hardware do Android, permitindo que os fabricantes de dispositivos forneçam novas atualizações do Android simplesmente atualizando a estrutura do Androidâ€”sem qualquer trabalho adicional exigido das fabricantes."</string>
+</resources>

@@ -95,14 +95,20 @@
     <string name="utils_error_cant_open_url">There is no app installed on your device that can open this URL.</string>
 
     <string name="changelog_title">Changelog</string>
-    <string name="changelog_message">
-        v3.0.0 – 04/20/2020\n
-        – updated design\n
-        – added support for identifying Virtual A/B partitions\n
-        - added support for checking System-as-root and CPU Architecture\n
-        – general improvements and bug fixes
-    </string>
-    <string name="changelog_action">@android:string/ok</string>
+    <string name="changelog_message">"v3.0.1 – 04/27/2020
+– [added] list of contributors to the app, huge thanks to them!
+– [added] explainer for Project Treble is now back
+– [added] support for checking 64-bit CPU but 32-bit OS
+– [added] updated app translations
+– [fixed] bug causing crashes when detecting system-as-root status
+– [fixed] bug causing text to be clipped on the edges
+
+v3.0.0 – 04/20/2020
+– updated design
+– added support for identifying Virtual A/B partitions
+– added support for checking System-as-root and CPU Architecture
+– general improvements and bug fixes"</string>
+    <string name="changelog_action" translatable="false">@android:string/ok</string>
 
     <string name="updater_flexible_complete_prompt_message">An update has just been downloaded.</string>
     <string name="updater_flexible_complete_prompt_action_message">Restart</string>

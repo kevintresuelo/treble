@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble 檢查"</string>
+    <string name="about_title">"關於"</string>
+    <string name="about_app_title">"關於本應用"</string>
+    <string name="about_app_birthday_pattern">"今天是這個應用程式的 %1$s 生日！"</string>
+    <string name="about_app_changelog_title">"變更日誌"</string>
+    <string name="about_app_twitter_title">"在推特上跟隨"</string>
+    <string name="about_app_github_title">"在 Github 上分支"</string>
+    <string name="about_app_licenses_title">"授權"</string>
+    <string name="about_app_updater_title">"檢查更新"</string>
+    <string name="about_dev_title">"開發者"</string>
+    <string name="about_dev_info_detail_location_title">"甲米地, 菲律賓"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"今天是他的 %1$s 生日！"</string>
+    <string name="about_dev_email_title">"寫信給開發者"</string>
+    <string name="about_dev_facebook_title">"造訪臉書"</string>
+    <string name="about_dev_instagram_title">"造訪Instagram"</string>
+    <string name="about_dev_twitter_title">"在Twitter上追隨"</string>
+    <string name="about_dev_telegram_title">"在Telegram上傳訊息"</string>
+    <string name="about_dev_google_play_title">"在 Google Play 商店查看"</string>
+    <string name="about_others_title">"其他"</string>
+    <string name="about_others_rate_title">"在 Google Play 上評價"</string>
+    <string name="about_others_translate_title">"翻譯這個應用程式"</string>
+    <string name="about_others_donate_title">"協助開發"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"你的裝置包含了對 Project Treble 的支援，且 VNDK %1$s 也捆綁在裡面。"</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"你的裝置包含了較舊版本的 Project Treble 。  VNDK %1$s 也捆綁在裡面。"</string>
+    <string name="checker_treble_unsupported_supporting_text">"你的裝置並不支援 Project Treble 。"</string>
+    <string name="checker_ab_title">"無縫系統更新"</string>
+    <string name="checker_ab_supported_supporting_text">"你的裝置包含了對無縫系統更新的支援，而且 有A/B 系統分區。"</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"你的裝置包含了對新版本的無縫更新的支援，而且有虛擬 A/B 系統分區。虛擬 A/B 分區可以依據所需空間自由調整分區大小。"</string>
+    <string name="checker_ab_supported_detail_text">"你的裝置可以在幾乎不影響使用者使用的情況下，在背景安裝系統更新。安裝更新後若更新有問題，可以還原到舊分區的同時降低風險並可以繼續正常使用手機。"</string>
+    <string name="checker_ab_unsupported_supporting_text">"你的裝置並不支援無縫系統更新，而且只有單個系統分區。"</string>
+    <string name="checker_ab_unsupported_detail_text">"你的裝置系統只使用了一個分區，這導致裝置會在套用更新時變得無法使用。更新失敗也會造成裝置無法使用直到套用修復。"</string>
+    <string name="checker_cpu_architecture_title">"CPU 架構"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"未知"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"你的裝置使用的 CPU 是 %1$s 架構。"</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"你的裝置使用的 CPU 架構未知。"</string>
+    <string name="checker_system_as_root_unknown_subtitle">"未知"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"你的裝置包含對“系統等於根目錄”的支援。"</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"你的裝置並不支援“系統等於根目錄”。"</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"在你的裝置上讀取已掛載的檔案系統時發生錯誤。"</string>
+    <string name="checker_donate_title">"贊助"</string>
+    <string name="checker_donate_subtitle">"支持應用程式的開發者"</string>
+    <string name="checker_donate_supporting_text">"透過贊助來表示你對於這個應用程式的愛心與支持。贊助可以讓我們維護像這樣的優質應用程式，並在未來可以繼續發展更多。"</string>
+    <string name="checker_donate_action_donate_title">"贊助"</string>
+    <string name="checker_donate_action_dismiss_title">"略過"</string>
+    <string name="checker_global_action_more_title">"更多資訊"</string>
+    <string name="checker_global_action_less_title">"更少資訊"</string>
+    <string name="checker_global_supported_subtitle">"支援"</string>
+    <string name="checker_global_unsupported_subtitle">"不支援"</string>
+    <string name="utils_error_cant_open_url">"你的裝置上沒有安裝任何能打開這個 URL 的應用程式。"</string>
+    <string name="changelog_title">"變更日誌"</string>
+    <string name="changelog_message">"v3.0.0 – 04/20/2020
+– 更新介面設計
+– 支援偵測虛擬 A/B 分區
+- 支援檢查“系統等於根目錄”和 CPU 架構
+– 改進和錯誤修正"</string>
+    <string name="updater_flexible_complete_prompt_message">"一個更新剛剛已經下載。"</string>
+    <string name="updater_flexible_complete_prompt_action_message">"重新啟動"</string>
+    <string name="updater_flexible_download_start_message">"更新正在下載中。"</string>
+    <string name="updater_feedback_up_to_date">"你正在使用最新的應用程式。"</string>
+    <string name="updater_feedback_in_progress">"一個更新已經在路上。"</string>
+    <string name="updater_feedback_error">"更新時發生了一個錯誤。請再試一次。"</string>
+    <string name="donate_title">"贊助"</string>
+    <string name="donate_error_service_unavailable_message">"無法連線到處理付款的伺服器以處理贊助。請檢查網路連線或稍後再試。"</string>
+    <string name="donate_error_unknown_message">"贊助時發生錯誤。"</string>
+</resources>

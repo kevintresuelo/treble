@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">"O aplikaci"</string>
+    <string name="about_app_title">"O aplikaci"</string>
+    <string name="about_app_changelog_title">"Databáze změn"</string>
+    <string name="about_app_twitter_title">"Sledovat na Twitteru"</string>
+    <string name="about_app_github_title">"Github"</string>
+    <string name="about_dev_title">"Vývojář"</string>
+    <string name="about_dev_info_detail_location_title">"Cavite, Filipíny"</string>
+    <string name="about_dev_email_title">"Napište mi email"</string>
+    <string name="about_dev_facebook_title">"Navštivte můj Facebook"</string>
+    <string name="about_dev_instagram_title">"Navštivte můj Instagram"</string>
+    <string name="about_dev_twitter_title">"Sledujte mě na Twitteru"</string>
+    <string name="about_dev_telegram_title">"Pošlete mi zprávu na Telegram"</string>
+    <string name="about_dev_google_play_title">"Podívejte se na Google Play"</string>
+</resources>

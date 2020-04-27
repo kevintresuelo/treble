@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_title">"Om"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_ab_title">"Systemuppdateringar i bakgrunden"</string>
+    <string name="checker_donate_title">"Donera"</string>
+    <string name="checker_donate_action_donate_title">"Donera"</string>
+    <string name="checker_donate_action_dismiss_title">"Stäng"</string>
+    <string name="checker_global_supported_subtitle">"Stöds"</string>
+    <string name="checker_global_unsupported_subtitle">"Stöds inte"</string>
+    <string name="donate_title">"Donera"</string>
+    <string name="rate_action_negative">"Aldrig"</string>
+    <string name="rate_action_positive">"Betygsätt"</string>
+    <string name="checker_explainer_title">"Var är Project Treble?"</string>
+    <string name="checker_explainer_subtitle">"Lättare, snabbare, billigare Android-uppdateringar"</string>
+    <string name="checker_explainer_supporting_text_1">"Project Treble separerar tillverkarens implementeringar (proprietär underliggande mjukvara av kiselproducenterna) från Android-systemets ramverk via ett nytt gränssnitt. I Android 7.x och tidigare fanns det inget formellt gränssnitt för tillverkare så enhetstillverkarna behövde uppdatera stora delar av Androids kod för att uppdatera en enhet till en nyare version av Android."</string>
+    <string name="checker_explainer_supporting_text_2">"Med Treble så finns ett nytt stabilt gränssnitt som ger tillgång till de hårdvarespecifika delarna av Android, vilket gör att enhetstillverkare kan leverera nya Android-versioner genom att helt enkelt uppdatera Android OS-ramverket—utan ytterligare arbete som krävs av kiselproducenterna."</string>
+</resources>

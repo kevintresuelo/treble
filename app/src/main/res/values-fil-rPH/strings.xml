@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!--
-       ~
-       ~    Treble Check - Treble Compatibility Checking App
-       ~    Copyright (C) 2017-2020  KevinT.
-       ~
-       ~    This program is free software: you can redistribute it and/or modify
-       ~    it under the terms of the GNU General Public License as published by
-       ~    the Free Software Foundation, either version 3 of the License, or
-       ~    (at your option) any later version.
-       ~
-       ~    This program is distributed in the hope that it will be useful,
-       ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
-       ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-       ~    GNU General Public License for more details.
-       ~
-       ~    You should have received a copy of the GNU General Public License
-       ~    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.html.
-       ~
-       -->
-
     <string name="app_name">"Treble Check"</string>
     <string name="about_title">"Tungkol dito"</string>
     <string name="about_app_title">"Tungkol sa app"</string>
@@ -72,13 +51,20 @@
     <string name="checker_global_unsupported_subtitle">"Hindi suportado"</string>
     <string name="utils_error_cant_open_url">"Walang app na naka-install sa iyong device na maaaring magbukas sa URL na ito."</string>
     <string name="changelog_title">"Listahan ng pagbabago"</string>
-    <string name="changelog_message">
-        v3.0.0 – 04/20/2020\n
-        – binago ang disenyo\n
-        – dinagdahan ng suporta upang matukoy ang Virtual A/B partitions\n
-        - dinagdahan ng suporta upang matukoy ang System-as-root at CPU Architecture\n
-        – pangkalahatang pagpapabuti at pagsasaayos"</string>
-    <string name="changelog_action">"@android:string/ok"</string>
+
+    <string name="changelog_message">"v3.0.1 – 04/27/2020
+– [idinagdag] listahan ng mga nag-ambag sa app, maraming salamat sa kanila!
+– [idinagdag] ang tagapagpaliwanag ng Project Treble ay nagbabalik
+– [idinagdag] suporta sa pagtukoy ng 64-bit CPU ngunit 32-bit OS
+– [idinagdag] ini-update ang mga salin ng app
+– [iniayos] bug na nagsasanhi ng mga crash habang tinutukoy ang estado ng system-as-root
+– [iniayos] bug na nagsasanhi na maputol ang mga salita sa dulo
+
+v3.0.0 – 04/20/2020
+– binago ang disenyo
+– dinagdahan ng suporta upang matukoy ang Virtual A/B partitions
+– dinagdahan ng suporta upang matukoy ang System-as-root at CPU Architecture
+– pangkalahatang pagpapabuti at pagsasaayos"</string>
     <string name="updater_flexible_complete_prompt_message">"Ang update ay nai-download na."</string>
     <string name="updater_flexible_complete_prompt_action_message">"I-restart"</string>
     <string name="updater_flexible_download_start_message">"Ang update ay nag-do-download na."</string>
@@ -97,4 +83,15 @@
     <string name="rate_action_positive">"I-rate"</string>
     <string name="rate_error_cant_open_url">"Walang app na naka-install sa iyong device na maaaring magbukas sa URL na ito. "</string>
     <string name="checker_treble_detail_text">"Inihihiwalay ng Project Treble ang Android OS at ang hardware abstraction layer sa pamamagitan ng isang HIDL interface. Hinahayaan nitong mai-upgrade ang Android OS nang hindi na kinakailangang buuin muli ang hardware-specific code. Ang mga device na sinusuportahan ang Project Treble ay kaya nang makapag-install ng system images na nakabatay sa mga bagong bersyon ng Android at maranasan ang mga bagong katangiang kaakibat nito."</string>
+    <string name="about_app_contributors_title">"Mga nag-ambag"</string>
+    <string name="checker_explainer_title">"Ano ang Project Treble?"</string>
+    <string name="checker_explainer_subtitle">"Mas madali, mas mabilis, mas murang updates ng Android OS"</string>
+    <string name="checker_explainer_supporting_text_1">"Ihinihiwalay ng Project Treble ang vendor implementation (partikular sa device, lower-level na software na isinulat ng silicon manufacturers) mula sa Android OS framework sa pamamagitan ng isang bagong vendor interface. Sa Android 7.x at mga nauna pa, walang pormal na vendor interface na umiiral kaya malaking bahagi ng Android code ang kinakailangang baguhin upang mailagay ang device sa bagong bersyon ng Android."</string>
+    <string name="checker_explainer_supporting_text_2">"Sa tulong ng Treble, mayroong bago at matatag na vendor interface na magbibigay ng daan sa mga hardware-specific na parte ng Android, na nakakatulong sa mga gumagawa ng device na maghatid ng mga bagong Android releases sa pamamagitan ng pag update sa framework ng Android OS nang walang kinakailangang karagdagang gawin mula sa mga silicon manufacturers."</string>
+    <string name="contributors_title">"Maraming salamat sa mga nag-ambag!"</string>
+
+    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
+
+Example: English translations, Spanish translations, etc. -->
+    <string name="contributors_description_translation">"Mga pagsasalin sa %1$s"</string>
 </resources>
