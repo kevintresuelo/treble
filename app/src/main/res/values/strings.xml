@@ -31,6 +31,7 @@
     <string name="about_app_github_title">Fork on Github</string>
     <string name="about_app_licenses_title">Licenses</string>
     <string name="about_app_updater_title">Check for updates</string>
+    <string name="about_app_contributors_title">Contributors</string>
     <string name="about_dev_title">Developer</string>
     <string name="about_dev_info_detail_name_title" translatable="false">KevinT.</string>
     <string name="about_dev_info_detail_location_title">Cavite, Philippines</string>
@@ -122,4 +123,8 @@
     <string name="rate_action_negative">Never</string>
     <string name="rate_action_positive">Rate</string>
     <string name="rate_error_cant_open_url">There is no app installed on your device that can open this URL.</string>
+
+    <string name="contributors_title">Huge thanks to the contributors!</string>
+    <string name="contributors_description_translation">%1$s translations</string>
+    <string name="contributors_action" translatable="false">@android:string/ok</string>
 </resources>

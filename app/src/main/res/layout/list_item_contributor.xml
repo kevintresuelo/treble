@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="@dimen/donate_list_item_height"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:padding="@dimen/global_spacing">
+
+    <TextView
+        android:id="@+id/lic_tv_contributor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lic_tv_contributor_description"
+        style="@style/TextAppearance.Treble.Subtitle2"
+        tools:text="Juan de la Cruz" />
+
+    <TextView
+        android:id="@+id/lic_tv_contributor_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lic_tv_contributor_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/TextAppearance.Treble.Caption"
+        tools:text="Filipino translations"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

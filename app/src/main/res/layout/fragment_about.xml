@@ -250,6 +250,35 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/fa_ll_app_contributors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fa_iv_app_contributors_icon"
+                            android:layout_width="@dimen/about_icon_size"
+                            android:layout_height="@dimen/about_icon_size"
+                            android:layout_margin="@dimen/global_margin_full"
+                            android:src="@drawable/ic_account_group"
+                            android:tint="@color/color_on_surface_high" />
+
+                        <TextView
+                            android:id="@+id/fa_tv_app_contributors_title"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/global_margin_full"
+                            android:text="@string/about_app_contributors_title"
+                            android:textColor="@color/color_on_surface_high" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>

@@ -49,6 +49,10 @@ class AboutFragment : Fragment() {
 
     private lateinit var binding: FragmentAboutBinding
 
+    private lateinit var contributorsBinding: DialogContributorsListBinding
+    private val contributorsList = ArrayList<Contributor>()
+    private val contributorsListAdapter = ContributorsListAdapter()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -83,6 +87,46 @@ class AboutFragment : Fragment() {
             .setPositiveButton(getString(R.string.changelog_action), null)
         binding.faLlAppChangelog.setOnClickListener {
             changelogDialog.show()
+        }
+
+        /**
+         * Sets up the list of contributors, and the RecyclerView
+         */
+        contributorsBinding = DataBindingUtil.inflate(inflater, R.layout.dialog_contributors_list, container, false)
+        /**
+         * List of contributors
+         */
+        contributorsList.add(Contributor("Alexey", Locale("ru").displayName))
+        contributorsList.add(Contributor("Gabor Sari", Locale("hu").displayName))
+        contributorsList.add(Contributor("Hüseyin", Locale("tr").displayName))
+        contributorsList.add(Contributor("hjthjthjt", Locale.SIMPLIFIED_CHINESE.displayName))
+        contributorsList.add(Contributor("Julio Gonzales", Locale("es").displayName))
+        contributorsList.add(Contributor("Melvin Salas", Locale("es").displayName))
+        contributorsList.add(Contributor("Nicolas", Locale("fr").displayName))
+        contributorsList.add(Contributor("Rob", Locale("it").displayName))
+        contributorsList.add(Contributor("Sean Kuan", Locale.TRADITIONAL_CHINESE.displayName))
+        contributorsList.add(Contributor("Svegmen925", Locale("ru").displayName))
+        contributorsList.add(Contributor("Vojtěch Vokoun", Locale("cs").displayName))
+
+        contributorsListAdapter.setContributorsList(contributorsList)
+
+        contributorsBinding.dclRvContributorsList.layoutManager = LinearLayoutManager(requireContext())
+        contributorsBinding.dclRvContributorsList.adapter = contributorsListAdapter
+
+        val contributorDialog = MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.contributors_title)
+            .setView(contributorsBinding.root)
+            .setPositiveButton(getString(R.string.contributors_action), null)
+
+        /**
+         * Opens an AlertDialog to show the list of contributors of the app.
+         */
+        binding.faLlAppContributors.setOnClickListener {
+            if (contributorsBinding.root.parent != null) {
+                (contributorsBinding.root.parent as ViewGroup).removeView(contributorsBinding.root)
+            }
+
+            contributorDialog.show()
         }
 
         /**
@@ -251,5 +295,51 @@ class AboutFragment : Fragment() {
             openUrl(activity as Activity, "https://play.google.com/store/apps/details?id=$appPackageName", false)
         }
     }
+
+    /**
+     * RecyclerView.Adapter for showing a list of contributors
+     */
+    class ContributorsListAdapter : RecyclerView.Adapter<ContributorsListAdapter.ContributorsViewHolder>() {
+
+        private var contributorsList = emptyList<Contributor>()
+
+        override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): ContributorsViewHolder {
+            val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item_contributor, parent, false)
+            return ContributorsViewHolder(itemView)
+        }
+
+        override fun onBindViewHolder(holder: ContributorsListAdapter.ContributorsViewHolder, position: Int) {
+            holder.bind(getItem(position))
+        }
+
+        override fun getItemCount() = contributorsList.size
+
+        fun setContributorsList(list: List<Contributor>) {
+            if (list != contributorsList) {
+                contributorsList = list
+                notifyDataSetChanged()
+            }
+        }
+
+        private fun getItem(position: Int) = if (contributorsList.isEmpty()) null else contributorsList[position]
+
+        inner class ContributorsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+            fun bind(item: Contributor?) {
+                item?.apply {
+                    itemView.apply {
+                        lic_tv_contributor_name.text = name
+                        lic_tv_contributor_description.text = resources.getString(R.string.contributors_description_translation, description)
+                    }
+                }
+            }
+        }
+
+    }
+
+    data class Contributor (
+        val name: String,
+        val description: String?
+    )
 
 }
