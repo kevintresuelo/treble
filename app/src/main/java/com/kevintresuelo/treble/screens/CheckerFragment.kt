@@ -22,9 +22,7 @@ package com.kevintresuelo.treble.screens
 
 import android.app.Activity
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.view.animation.Animation
 import android.view.animation.Transformation
@@ -32,11 +30,11 @@ import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.kevintresuelo.adnoto.RatePrompter
 import com.kevintresuelo.treble.R
 import com.kevintresuelo.treble.checker.*
 import com.kevintresuelo.treble.databinding.FragmentCheckerBinding
 import com.kevintresuelo.treble.donate.DonateDialogFragment
-import com.kevintresuelo.adnoto.RateTheApp
 import com.kevintresuelo.treble.utils.openUrl
 
 
@@ -62,7 +60,7 @@ class CheckerFragment : Fragment() {
         /**
          * Asks the user to rate the app on Google Play
          */
-        RateTheApp(context, 3)
+        RatePrompter(context, 3)
 
         /**
          * Shows the Donate CardView if the user has opened the app thrice
@@ -165,7 +163,7 @@ class CheckerFragment : Fragment() {
         val cpuArchitectureCheck = CPUArchitecture.check()
         cpuArchitectureCheck?.let {
             val cpuArchDesc = when (it.cpuArch) {
-                ABI.ARM -> R.string.checker_cpu_architecture_arm32_subtitle
+                ABI.ARM32 -> R.string.checker_cpu_architecture_arm32_subtitle
                 ABI.ARM32_BINDER64 -> R.string.checker_cpu_architecture_arm32_binder64_subtitle
                 ABI.ARM64 -> R.string.checker_cpu_architecture_arm64_subtitle
                 ABI.X86 -> R.string.checker_cpu_architecture_x86_subtitle
@@ -174,7 +172,7 @@ class CheckerFragment : Fragment() {
             binding.fcTvStatusCpuArchitectureSubtitle.text = getString(cpuArchDesc)
             binding.fcTvStatusCpuArchitectureSupportingText.text = getString(R.string.checker_cpu_architecture_known_supporting_text, getString(cpuArchDesc))
 
-            if (it.cpuArch == ABI.ARM || it.cpuArch == ABI.ARM32_BINDER64) {
+            if (it.cpuArch == ABI.ARM32 || it.cpuArch == ABI.ARM32_BINDER64) {
                 binding.fcIvStatusCpuArchitectureIcon.setImageResource(R.drawable.ic_cpu_32_bit)
             } else if (it.cpuArch == ABI.ARM64) {
                 binding.fcIvStatusCpuArchitectureIcon.setImageResource(R.drawable.ic_cpu_64_bit)

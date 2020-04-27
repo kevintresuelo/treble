@@ -61,11 +61,11 @@
 
     <string name="checker_cpu_architecture_title">CPU Architecture</string>
     <string name="checker_cpu_architecture_unknown_subtitle">Unknown</string>
-    <string name="checker_cpu_architecture_arm32_subtitle" translatable="false">ARM 32-bit</string>
-    <string name="checker_cpu_architecture_arm32_binder64_subtitle" translatable="false">ARM 32-bit Binder 64-bit</string>
-    <string name="checker_cpu_architecture_arm64_subtitle" translatable="false">ARM 64-bit</string>
+    <string name="checker_cpu_architecture_arm32_subtitle" translatable="false">32-bit ARM</string>
+    <string name="checker_cpu_architecture_arm32_binder64_subtitle" translatable="false">32-bit ARM &#8212; 64-bit Binder</string>
+    <string name="checker_cpu_architecture_arm64_subtitle" translatable="false">64-bit ARM</string>
     <string name="checker_cpu_architecture_x86_subtitle" translatable="false">x86</string>
-    <string name="checker_cpu_architecture_x86_64_subtitle" translatable="false">x86 64-bit</string>
+    <string name="checker_cpu_architecture_x86_64_subtitle" translatable="false">64-bit x86</string>
     <string name="checker_cpu_architecture_known_supporting_text">Your device uses a CPU with %1$s architecture.</string>
     <string name="checker_cpu_architecture_unknown_supporting_text">Your device uses a CPU with an unknown architecture.</string>
 
