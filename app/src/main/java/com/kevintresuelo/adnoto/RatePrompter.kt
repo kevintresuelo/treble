@@ -119,7 +119,7 @@ class RatePrompter(context: Context?, openThreshold: Int = 5) {
             if (intent.resolveActivity(packageManager) != null) {
                 context.startActivity(intent)
             } else {
-                Toast.makeText(context, context.resources.getString(R.string.utils_error_cant_open_url), Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, context.resources.getString(R.string.rate_error_cant_open_url), Toast.LENGTH_SHORT).show()
             }
         }
     }
