@@ -232,8 +232,8 @@ class AboutFragment : Fragment() {
         /**
          * Opens the donation dialog
          */
+        val billingViewModel = ViewModelProvider(this).get(BillingViewModel::class.java)
         binding.faLlOthersDonate.setOnClickListener {
-            val billingViewModel = ViewModelProvider(this).get(BillingViewModel::class.java)
             DonateDialogFragment(billingViewModel).show(parentFragmentManager, DonateDialogFragment.TAG)
         }
 
