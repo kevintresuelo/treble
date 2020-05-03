@@ -8,7 +8,7 @@ buildscript {
     ext.billing_version = "2.2.0"
     ext.play_core = "1.7.2"
     ext.room_version = "2.2.5"
-    ext.recycler_view_version = "1.2.0-alpha02"
+    ext.recycler_view_version = "1.2.0-alpha03"
     ext.lifecycle_extensions_version = "2.2.0"
     repositories {
         google()
