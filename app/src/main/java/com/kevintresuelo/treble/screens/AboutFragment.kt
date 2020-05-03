@@ -99,7 +99,7 @@ class AboutFragment : Fragment() {
          * List of contributors
          */
         contributorsList.add(Contributor("Alexey", Locale("ru").displayName))
-        contributorsList.add(Contributor("Gabor Sari", Locale("hu").displayName))
+        contributorsList.add(Contributor("Sári Gábor", Locale("hu").displayName))
         contributorsList.add(Contributor("Hüseyin", Locale("tr").displayName))
         contributorsList.add(Contributor("hjthjthjt", Locale.SIMPLIFIED_CHINESE.displayName))
         contributorsList.add(Contributor("Julio Gonzales", Locale("es").displayName))
