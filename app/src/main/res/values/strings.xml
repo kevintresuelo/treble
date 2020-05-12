@@ -95,7 +95,11 @@
     <string name="utils_error_cant_open_url">There is no app installed on your device that can open this URL.</string>
 
     <string name="changelog_title">Changelog</string>
-    <string name="changelog_message">"v3.0.1 – 04/27/2020
+    <string name="changelog_message">"v3.0.2 - 05/18/2020
+– [added] manually switch to dark theme
+– [fixed] minor bug fixes
+
+v3.0.1 – 04/27/2020
 – [added] list of contributors to the app, huge thanks to them!
 – [added] explainer for Project Treble is now back
 – [added] support for checking 64-bit CPU but 32-bit OS
@@ -133,4 +137,14 @@ v3.0.0 – 04/20/2020
     <string name="contributors_title">Huge thanks to the contributors!</string>
     <string name="contributors_description_translation">%1$s translations</string>
     <string name="contributors_action" translatable="false">@android:string/ok</string>
+
+    <string name="theme_title">Set theme</string>
+    <string name="theme_key">theme</string>
+    <string name="theme_option_default_title">Use system default</string>
+    <string name="theme_option_default_value" translatable="false">default</string>
+    <string name="theme_option_light_title">Light theme</string>
+    <string name="theme_option_light_value" translatable="false">light</string>
+    <string name="theme_option_dark_title">Dark theme</string>
+    <string name="theme_option_dark_value" translatable="false">dark</string>
+    <string name="theme_default_value" translatable="false">@string/theme_option_default_value</string>
 </resources>

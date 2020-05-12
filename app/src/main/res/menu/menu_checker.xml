@@ -26,4 +26,8 @@
     <item android:id="@+id/mt_i_about"
         android:title="@string/about_title"
         app:showAsAction="never"/>
+
+    <item android:id="@+id/mt_i_theme"
+        android:title="@string/theme_title"
+        app:showAsAction="never"/>
 </menu>

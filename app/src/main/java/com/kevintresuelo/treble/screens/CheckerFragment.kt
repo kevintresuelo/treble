@@ -26,11 +26,14 @@ import android.os.Bundle
 import android.view.*
 import android.view.animation.Animation
 import android.view.animation.Transformation
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.preference.PreferenceManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.kevintresuelo.adnoto.RatePrompter
 import com.kevintresuelo.treble.R
 import com.kevintresuelo.treble.billing.viewmodels.BillingViewModel
@@ -43,6 +46,7 @@ import com.kevintresuelo.treble.utils.openUrl
 class CheckerFragment : Fragment() {
 
     private lateinit var binding: FragmentCheckerBinding
+    private var themeSelectorDialog: MaterialAlertDialogBuilder? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -280,6 +284,35 @@ class CheckerFragment : Fragment() {
     }
 
     /**
+     * Shows an AlertDialog enabling users to change themes
+     */
+    private fun showThemeSelector() {
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity)
+        val selectedTheme = sharedPreferences.getString(getString(R.string.theme_key), getString(R.string.theme_default_value))
+
+        val themeEntries = arrayOf(getString(R.string.theme_option_default_title), getString(R.string.theme_option_light_title), getString(R.string.theme_option_dark_title))
+        val themeEntryValues = arrayOf(getString(R.string.theme_option_default_value), getString(R.string.theme_option_light_value), getString(R.string.theme_option_dark_value))
+
+        var selectedThemeIndex = themeEntryValues.indexOf(selectedTheme)
+
+        themeSelectorDialog = MaterialAlertDialogBuilder(requireContext())
+            .setTitle(R.string.theme_title)
+            .setNegativeButton(android.R.string.cancel, null)
+            .setPositiveButton(android.R.string.ok) { dialog, which ->
+                with (sharedPreferences.edit()) {
+                    putString(getString(R.string.theme_key), themeEntryValues[selectedThemeIndex])
+                    apply()
+                }
+                Toast.makeText(requireContext(), "${themeEntries[selectedThemeIndex]} - ${themeEntryValues[selectedThemeIndex]}", Toast.LENGTH_SHORT).show()
+            }
+            .setSingleChoiceItems(themeEntries, selectedThemeIndex) {dialog, which ->
+                selectedThemeIndex = which
+            }
+
+        themeSelectorDialog!!.show()
+    }
+
+    /**
      * Inflates the menu from R.menu.menu_checker resource
      */
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -293,6 +326,7 @@ class CheckerFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.mt_i_about -> this.findNavController().navigate(R.id.action_trebleFragment_to_aboutFragment)
+            R.id.mt_i_theme -> showThemeSelector()
         }
         return super.onOptionsItemSelected(item)
     }

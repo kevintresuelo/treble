@@ -21,25 +21,34 @@
 package com.kevintresuelo.treble
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.preference.PreferenceManager
 import com.kevintresuelo.treble.databinding.ActivityMainBinding
 import com.kevintresuelo.novus.UpdateChecker
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceChangeListener {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var updateChecker: UpdateChecker
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        applyTheme()
+
         super.onCreate(savedInstanceState)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         /**
@@ -59,10 +68,34 @@ class MainActivity : AppCompatActivity() {
         updateChecker.checkForUpdates()
     }
 
+    private fun applyTheme() {
+        when (sharedPreferences.getString(
+            getString(R.string.theme_key),
+            getString(R.string.theme_key)
+        )) {
+            getString(R.string.theme_option_dark_value) -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+            getString(R.string.theme_option_light_value) -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+            else -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+        }
+    }
+
     override fun onResume() {
         super.onResume()
 
         updateChecker.checkForStalledUpdates()
+        sharedPreferences.registerOnSharedPreferenceChangeListener(this)
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        sharedPreferences.unregisterOnSharedPreferenceChangeListener(this)
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -73,5 +106,11 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         UpdateChecker.assessActivityResult(requestCode, resultCode, findViewById(android.R.id.content))
+    }
+
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
+        when (key) {
+            getString(R.string.theme_key) -> applyTheme()
+        }
     }
 }
