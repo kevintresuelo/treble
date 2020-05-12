@@ -139,7 +139,7 @@ v3.0.0 – 04/20/2020
     <string name="contributors_action" translatable="false">@android:string/ok</string>
 
     <string name="theme_title">Set theme</string>
-    <string name="theme_key">theme</string>
+    <string name="theme_key" translatable="false">theme</string>
     <string name="theme_option_default_title">Use system default</string>
     <string name="theme_option_default_value" translatable="false">default</string>
     <string name="theme_option_light_title">Light theme</string>
