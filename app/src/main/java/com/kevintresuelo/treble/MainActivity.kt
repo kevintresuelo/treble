@@ -22,9 +22,8 @@ package com.kevintresuelo.treble
 
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
@@ -33,8 +32,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.preference.PreferenceManager
-import com.kevintresuelo.treble.databinding.ActivityMainBinding
 import com.kevintresuelo.novus.UpdateChecker
+import com.kevintresuelo.treble.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceChangeListener {
 
@@ -44,6 +43,10 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
     private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        /**
+         * Initiates the SharedPreferences and changes the app theme accordingly.
+         */
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         applyTheme()
 
@@ -68,10 +71,13 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
         updateChecker.checkForUpdates()
     }
 
+    /**
+     * Applies theme based on the preference of the user.
+     */
     private fun applyTheme() {
         when (sharedPreferences.getString(
             getString(R.string.theme_key),
-            getString(R.string.theme_key)
+            getString(R.string.theme_default_value)
         )) {
             getString(R.string.theme_option_dark_value) -> {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
@@ -80,7 +86,7 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
             else -> {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
             }
         }
     }
