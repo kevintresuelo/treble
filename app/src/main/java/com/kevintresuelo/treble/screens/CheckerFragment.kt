@@ -303,7 +303,6 @@ class CheckerFragment : Fragment() {
                     putString(getString(R.string.theme_key), themeEntryValues[selectedThemeIndex])
                     apply()
                 }
-                Toast.makeText(requireContext(), "${themeEntries[selectedThemeIndex]} - ${themeEntryValues[selectedThemeIndex]}", Toast.LENGTH_SHORT).show()
             }
             .setSingleChoiceItems(themeEntries, selectedThemeIndex) {dialog, which ->
                 selectedThemeIndex = which
