@@ -89,9 +89,5 @@ v3.0.0 – 04/20/2020
     <string name="checker_explainer_supporting_text_1">"Le projet Treble sépare l'implémentation du fournisseur (logiciel de bas niveau spécifique à l'appareil, écrit par les fabricants de silicium) du cadre du système d'exploitation Android via une nouvelle interface de fournisseur. Dans Android 7.x et versions antérieures, aucune interface fournisseur officielle n'existe, les fabricants d'appareils doivent donc mettre à jour de grandes parties du code Android pour déplacer un appareil vers une version plus récente d'Android."</string>
     <string name="checker_explainer_supporting_text_2">"Avec Treble, une nouvelle interface fournisseur stable donne accès aux parties d'Android spécifiques au matériel, permettant aux fabricants d'appareils de livrer les nouvelles versions d'Android simplement en mettant à jour le cadre du système d'exploitation Android - sans travail supplémentaire requis de la part des fabricants de silicium."</string>
     <string name="contributors_title">"Un grand merci aux contributeurs !"</string>
-
-    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
-
-Example: English translations, Spanish translations, etc. -->
     <string name="contributors_description_translation">"traductions %1$s"</string>
 </resources>

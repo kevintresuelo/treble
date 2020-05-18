@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Treble Check"</string>
+    <string name="about_title">"このアプリについて"</string>
+    <string name="about_app_title">"このアプリについて"</string>
+    <string name="about_app_birthday_pattern">"今日は このアプリの %1$s 回目の誕生日!"</string>
+    <string name="about_app_changelog_title">"変更履歴"</string>
+    <string name="about_app_twitter_title">"Twitterをフォローする"</string>
+    <string name="about_app_github_title">"Githubでフォークする"</string>
+    <string name="about_app_licenses_title">"ライセンス"</string>
+    <string name="about_app_updater_title">"更新を確認"</string>
+    <string name="about_dev_title">"開発者"</string>
+    <string name="about_dev_info_detail_location_title">"カビテ, フィリピン"</string>
+    <string name="about_dev_info_detail_birthday_pattern">"今日は彼の %1$s 回目の誕生日!"</string>
+    <string name="about_dev_email_title">"メールを書く"</string>
+    <string name="about_dev_facebook_title">"Facebookを訪れる"</string>
+    <string name="about_dev_instagram_title">"Instagramを訪れる"</string>
+    <string name="about_dev_twitter_title">"Twitterをフォローする"</string>
+    <string name="about_dev_telegram_title">"Telegramでメッセージを送る"</string>
+    <string name="about_dev_google_play_title">"Google Playで確認"</string>
+    <string name="about_others_title">"その他"</string>
+    <string name="about_others_rate_title">"Google Playで評価する"</string>
+    <string name="about_others_translate_title">"このアプリの翻訳"</string>
+    <string name="about_others_donate_title">"開発者を支援する"</string>
+    <string name="checker_treble_title">"Project Treble"</string>
+    <string name="checker_treble_supported_new_vndk_supporting_text">"あなたのデバイスはProject Treble対応です。VNDK %1$s も含まれています。"</string>
+    <string name="checker_treble_supported_old_vndk_supporting_text">"あなたのデバイスは古いバージョンのProject Treble対応です。VNDK %1$s も含まれています。"</string>
+    <string name="checker_treble_unsupported_supporting_text">"あなたのデバイスはProject Trebleに対応していません。"</string>
+    <string name="checker_ab_title">"シームレス システム アップデート"</string>
+    <string name="checker_ab_supported_supporting_text">"あなたのデバイスは シームレス システム アップデート に対応しています。A/B システムパーティションを検出しました。"</string>
+    <string name="checker_ab_supported_virtual_supporting_text">"あなたのデバイスは 新しいシームレス システムアップデートに対応しています。仮想A/B システムパーティションを検出しました。
+仮想A/Bパーテーションは必要に応じてパーティションサイズを調整します。"</string>
+    <string name="checker_ab_supported_detail_text">"システムアップデートがバックグラウンドで処理されるため、ユーザへの影響が最小限となります。またアップデートが悪い結果となった場合、古いパーティションから再起動することで以前の状態に戻すことができます。"</string>
+    <string name="checker_ab_unsupported_supporting_text">"あなたのデバイスは Seamless System Updates に対応していません。A-only システムパーティションです。"</string>
+    <string name="checker_ab_unsupported_detail_text">"システム用のパーティションが１つだけであるため、アップデートに時間がかかり、その間使用できません。またアップデートが失敗した場合、使えなくなります。"</string>
+    <string name="checker_cpu_architecture_title">"CPUアーキテクチャ"</string>
+    <string name="checker_cpu_architecture_unknown_subtitle">"不明"</string>
+    <string name="checker_cpu_architecture_known_supporting_text">"あなたのデバイスは %1$s アーキテクチャのCPUを使用しています。"</string>
+    <string name="checker_cpu_architecture_unknown_supporting_text">"あなたのデバイスは 不明なアーキテクチャのCPUを使用しています。"</string>
+    <string name="checker_system_as_root_unknown_subtitle">"不明"</string>
+    <string name="checker_system_as_root_supported_supporting_text">"system-as-root が利用可能"</string>
+    <string name="checker_system_as_root_unsupported_supporting_text">"system-as-rootが使用不可"</string>
+    <string name="checker_system_as_root_unknown_supporting_text">"ファイルシステムのマウントに失敗しました"</string>
+    <string name="checker_donate_title">"寄付"</string>
+    <string name="checker_donate_subtitle">"アプリ開発者を支援"</string>
+    <string name="checker_donate_supporting_text">"もしこのアプリが便利だと思ったら、開発者に寄付をお願いいたします。寄付アプリから簡単に実施できます。"</string>
+    <string name="checker_donate_action_donate_title">"寄付"</string>
+    <string name="checker_donate_action_dismiss_title">"断る"</string>
+    <string name="checker_global_action_more_title">"詳細を表示"</string>
+    <string name="checker_global_action_less_title">"詳細を隠す"</string>
+    <string name="checker_global_supported_subtitle">"対応"</string>
+    <string name="checker_global_unsupported_subtitle">"非対応"</string>
+    <string name="utils_error_cant_open_url">"このURLを開けるアプリがインストールされていません"</string>
+    <string name="changelog_title">"変更履歴"</string>
+    <string name="changelog_message">"v3.0.2 - 05/18/2020
+– [追加] 手動でダークテーマに切り替え可能に
+– [修正] ちょっとしたバグ修正
+
+v3.0.1 – 04/27/2020
+– [追加] アプリへの貢献者一覧の作成。
+– [追加] explainer for Project Treble is now back
+– [追加] CPUは64-BitだけどOSは32-bitの場合追加
+– [追加] 翻訳の更新
+– [修正] system-as-root検出でのクラッシュ
+– [修正] bug causing text to be clipped on the edges
+
+v3.0.0 – 04/20/2020
+– [追加] デザインの見直し
+– [追加] 仮想A/Bパーティションの検出
+– [追加] System-as-rootとCPUアーキテクチャの確認
+– [修正] バグ修正"</string>
+    <string name="updater_flexible_complete_prompt_message">"更新がダウンロードされました"</string>
+    <string name="updater_flexible_complete_prompt_action_message">"再起動"</string>
+    <string name="updater_flexible_download_start_message">"更新をダウンロード中"</string>
+    <string name="updater_feedback_up_to_date">"最新版で動作中"</string>
+    <string name="updater_feedback_in_progress">"既に更新を実施中"</string>
+    <string name="updater_feedback_error">"更新でエラーが発生しました。再実行してください"</string>
+    <string name="donate_title">"寄付"</string>
+    <string name="donate_error_service_unavailable_message">"寄付の処理を行うサーバにアクセスできません。デバイスがインターネットに接続されているか確認するか、数分経ってから再実行してください"</string>
+    <string name="donate_error_unknown_message">"寄付の実行中に不明なエラーが発生しました"</string>
+    <string name="donate_pending_message">"あなたのアカウントで支払い処理が中断されています。選択した支払いシステム側で状況を確認してください。"</string>
+    <string name="donate_received_message">"寄付をありがとうございます！とてもうれしいです。これからもよろしくお願いいたします。"</string>
+    <string name="rate_title">"このアプリはどうですか？"</string>
+    <string name="rate_message">"Treble Checkをちゃんと使えていますか？もしよかったらGoogle Playでアプリの評価を書いてもらえませんか？"</string>
+    <string name="rate_action_neutral">"あとで"</string>
+    <string name="rate_action_negative">"しない"</string>
+    <string name="rate_action_positive">"評価する"</string>
+    <string name="rate_error_cant_open_url">"このURLを開けるアプリがインストールされていません"</string>
+    <string name="checker_treble_detail_text">"Project Treble はAndroid OSとハードウェアを分離します。ハードウェアは予め定義されたHALインタフェース定義言語(HIDL)を使って操作されるため、Android OS自身には特定のハードウェアに依存したプログラムをする必要がありません。これによりProject Trebleに対応するデバイスでは、新しいバージョンのAndroidや新しい追加されたAndroidをインストールすることが可能となります。"</string>
+    <string name="about_app_contributors_title">"貢献者"</string>
+    <string name="checker_explainer_title">"Project Treble とは？"</string>
+    <string name="checker_explainer_subtitle">"簡単に,速く,低コストでAndroid OSのアップデートを実現"</string>
+    <string name="checker_explainer_supporting_text_1">"Project Treble ではベンダー特有の実装(デバイス依存やアセンブラなどを必要とするもの)は、Android OSフレームワークのベンダ向けインタフェースを経由して使用可能とします。Android 7.xやそれ以前ではそのようなインタフェースが無かったためにOS本体に組み込む必要があったため、新しいAndroid OSへの移行が困難でした。"</string>
+    <string name="checker_explainer_supporting_text_2">"Trebleでは、Androidで使用するハードウェア操作のための安定したベンダ向けインタフェースが用意されているため、ハードウェア操作に関するソフトウェアの更新無しで、Android OSのアップデートを提供することが可能となっています。"</string>
+    <string name="contributors_title">"貢献者の方々へ多大なる感謝を!"</string>
+    <string name="contributors_description_translation">"%1$s 翻訳者"</string>
+    <string name="theme_title">"テーマを設定"</string>
+    <string name="theme_option_default_title">"システムデフォルトを使用"</string>
+    <string name="theme_option_light_title">"ライトテーマ"</string>
+    <string name="theme_option_dark_title">"ダークテーマ"</string>
+</resources>

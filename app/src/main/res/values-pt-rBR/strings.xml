@@ -1,18 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_title">"Sobre"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_title">"Sobre o Aplicativo"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_birthday_pattern">"Hoje este aplicativo comemora seu %1$s aniversário !!"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_changelog_title">"Lista de mudanças"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_twitter_title">"Siga no Twitter"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_github_title">"Visite o Github"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_licenses_title">"Licenças"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_updater_title">"Procurar atualizações"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_title">"Desenvolvedor"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_info_detail_location_title">"Cavite, Filipinas"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_info_detail_birthday_pattern">"Hoje e o %1$s Aniversário!!"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_email_title">"Escreva um email"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_facebook_title">"Visitar no Facebook"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_instagram_title">"Seguir no Instagram"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_twitter_title">"Seguir no Twitter"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_telegram_title">"Telegram "</string>
+
+    <!-- Fuzzy -->
+    <string name="about_dev_google_play_title">"Confira no Google Play "</string>
+
+    <!-- Fuzzy -->
+    <string name="about_others_title">"Outros"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_others_rate_title">"Classifique no Google Play"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_others_translate_title">"Ajude na Tradução ♥️"</string>
+
+    <!-- Fuzzy -->
+    <string name="about_others_donate_title">"Ajude o Desenvolvedor"</string>
     <string name="checker_treble_title">"Projeto Treble"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_treble_supported_new_vndk_supporting_text">"Seu dispositivo tem o suporte necessário para o Project Treble. O VNDK %1$s também está fornecido junto com ele."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_treble_supported_old_vndk_supporting_text">"Seu dispositivo inclui suporte para a versão herdada do Project Treble. O VNDK %1$s também é fornecido junto com ele."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_treble_unsupported_supporting_text">"Infelizmente seu dispositivo não possui suporte ao Project Treble"</string>
     <string name="checker_ab_title">"Atualizações Simples"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_ab_supported_supporting_text">"Seu dispositivo inclui suporte para atualizações contínuas do sistema e foi detectado que possui uma partição do sistema A/B."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_ab_supported_virtual_supporting_text">"Seu dispositivo inclui suporte para as novas atualizações do sistema e foi detectado que possui uma partição do sistema A/B virtual. Essas partições virtuais podem ser redimensionadas de acordo com o espaço necessário."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_ab_supported_detail_text">"Seu dispositivo pode instalar atualizações do sistema em segundo plano, resultando em interrupção mínima do usuário. Instalar atualizações também é menos arriscado, pois o dispositivo pode reiniciar novamente na partição antiga e permanecer"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_ab_unsupported_supporting_text">"Seu dispositivo não tem suporte a Atualizações integradas do sistema e foi detectado que possui uma partição de sistema somente A."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_ab_unsupported_detail_text">"Seu dispositivo não oferece suporte a atualizações contínuas do sistema e foi detectado como tendo uma partição de sistema somente A."</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_cpu_architecture_title">"Arquitetura da CPU"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_cpu_architecture_unknown_subtitle">"Desconhecido"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_cpu_architecture_known_supporting_text">"A CPU do seu dispositivo usa a arquitetura %1$s"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_cpu_architecture_unknown_supporting_text">"Seu dispositivo usa uma CPU com arquitetura desconhecida"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_system_as_root_unknown_subtitle">"Desconhecido"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_system_as_root_supported_supporting_text">"O seu dispositivo inclui suporte para Sistema com Root"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_system_as_root_unsupported_supporting_text">"Seu dispositivo não tem suporte Root"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_system_as_root_unknown_supporting_text">"Ocorreu um erro ao ler os sistemas de arquivos montados no seu dispositivo."</string>
     <string name="checker_donate_title">"Doar"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_donate_subtitle">"Ajude no desenvolvimento do App"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_donate_supporting_text">"Mostre seu amor e apoio ao aplicativo doando. As doações nos ajudam a fazer um aplicativo de qualidade como esse e melhorar a cada atualização."</string>
     <string name="checker_donate_action_donate_title">"Doar"</string>
     <string name="checker_donate_action_dismiss_title">"Dispensar"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_global_action_more_title">"Mais informações"</string>
+
+    <!-- Fuzzy -->
+    <string name="checker_global_action_less_title">"Menos"</string>
     <string name="checker_global_supported_subtitle">"Suportado"</string>
     <string name="checker_global_unsupported_subtitle">"Não Suportado"</string>
+
+    <!-- Fuzzy -->
+    <string name="utils_error_cant_open_url">"Não há aplicativo instalado no seu dispositivo que possa abrir este URL."</string>
+
+    <!-- Fuzzy -->
+    <string name="changelog_title">"Lista de mudanças"</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_flexible_complete_prompt_message">"Uma atualização acabou de ser baixada."</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_flexible_complete_prompt_action_message">"Reiniciar"</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_flexible_download_start_message">"A atualização está sendo baixada."</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_feedback_up_to_date">"Você já está na atualização mais recente."</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_feedback_in_progress">"Uma atualização já está em andamento."</string>
+
+    <!-- Fuzzy -->
+    <string name="updater_feedback_error">"Ocorreu um erro ao tentar atualizar. Por favor, tente novamente."</string>
     <string name="donate_title">"Doar"</string>
+
+    <!-- Fuzzy -->
+    <string name="donate_error_service_unavailable_message">"Não foi possível estabelecer uma conexão com o serviço de pagamento para processar a doação. Verifique sua conexão com a internet ou tente novamente em alguns minutos."</string>
+
+    <!-- Fuzzy -->
+    <string name="donate_error_unknown_message">"Ocorreu um erro desconhecido com a doação."</string>
+
+    <!-- Fuzzy -->
+    <string name="donate_pending_message">"Uma compra em sua conta ainda está pendente. Coordene com o seu provedor de métodos de pagamento para concluir sua compra."</string>
+
+    <!-- Fuzzy -->
+    <string name="donate_received_message">"Doação recebida! Do fundo de nossos corações, agradecemos por mostrar seu apoio."</string>
+
+    <!-- Fuzzy -->
+    <string name="rate_title">"Você gosta deste app?"</string>
+
+    <!-- Fuzzy -->
+    <string name="rate_message">"Se você gosta de usar o Treble Check, reserve um momento e deixe um comentário no Google Play."</string>
+
+    <!-- Fuzzy -->
+    <string name="rate_action_neutral">"Depois"</string>
     <string name="rate_action_negative">"Nunca"</string>
     <string name="rate_action_positive">"Avaliar"</string>
+
+    <!-- Fuzzy -->
+    <string name="rate_error_cant_open_url">"Não há aplicativo instalado no seu dispositivo que possa abrir este URL."</string>
+
+    <!-- Fuzzy -->
+    <string name="about_app_contributors_title">"Colaboradores"</string>
     <string name="checker_explainer_title">"O que é Projeto Treble?"</string>
     <string name="checker_explainer_subtitle">"Atualizações do Android mais fáceis, mais rápidas e mais econômicas"</string>
     <string name="checker_explainer_supporting_text_1">"Projeto Treble separa o vendor (parte do software específico do dispositivo, escrito pela fabricante) da estrutura do sistema operacional por meio de uma nova partição de vendor. No Android 7.x e versões anteriores não há partição formal com vendor, assim as fabricantes de dispositivos precisam atualizar grandes partes do código do Android para mover um dispositivo para uma versão mais recente do Android."</string>
     <string name="checker_explainer_supporting_text_2">"Com Treble, uma nova partição de vendor estável fornece acesso às partes específicas do hardware do Android, permitindo que os fabricantes de dispositivos forneçam novas atualizações do Android simplesmente atualizando a estrutura do Androidâ€”sem qualquer trabalho adicional exigido das fabricantes."</string>
+
+    <!-- Fuzzy -->
+    <string name="contributors_title">"Muito obrigado aos colaboradores!"</string>
 </resources>

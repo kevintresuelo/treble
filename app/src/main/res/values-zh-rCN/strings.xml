@@ -90,4 +90,8 @@ v3.0.0 – 04/20/2020
     <string name="contributors_title">"非常感谢我们的贡献者！"</string>
 
     <string name="contributors_description_translation">"%1$s翻译"</string>
+    <string name="theme_title">"设置主题"</string>
+    <string name="theme_option_default_title">"使用系统默认"</string>
+    <string name="theme_option_light_title">"亮色主题"</string>
+    <string name="theme_option_dark_title">"暗色主题"</string>
 </resources>

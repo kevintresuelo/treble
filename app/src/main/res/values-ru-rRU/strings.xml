@@ -90,9 +90,5 @@ v3.0.0 – 20.04.2020
     <string name="checker_explainer_supporting_text_1">"Project Treble отделяет реализацию вендора (специфичное для устройства, низкоуровневое программное обеспечение, написанное производителями аппаратной части устройства) от платформы ОС Android через новый интерфейс поставщика, что ускоряет, облегчает и делает более безопасной установку обновлений Android. В Android 7.x и более ранних версиях интерфейс официального поставщика отсутствует, поэтому производители устройств должны обновить большие части кода Android, чтобы переместить устройство на более новую версию Android."</string>
     <string name="checker_explainer_supporting_text_2">"С Treble новый стабильный интерфейс вендора обеспечивает доступ к аппаратным частям Android, позволяя производителям устройств выпускать новые версии Android просто путем обновления платформы Android ОС - без каких-либо дополнительных действий, требуемых от производителей аппаратной части устройства."</string>
     <string name="contributors_title">"Большое спасибо людям, поддержавшим проект!"</string>
-
-    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
-
-Example: English translations, Spanish translations, etc. -->
     <string name="contributors_description_translation">"%1$s переводы"</string>
 </resources>

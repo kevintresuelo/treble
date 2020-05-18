@@ -89,9 +89,9 @@ v3.0.0 – 04/20/2020
     <string name="checker_explainer_supporting_text_1">"Ihinihiwalay ng Project Treble ang vendor implementation (partikular sa device, lower-level na software na isinulat ng silicon manufacturers) mula sa Android OS framework sa pamamagitan ng isang bagong vendor interface. Sa Android 7.x at mga nauna pa, walang pormal na vendor interface na umiiral kaya malaking bahagi ng Android code ang kinakailangang baguhin upang mailagay ang device sa bagong bersyon ng Android."</string>
     <string name="checker_explainer_supporting_text_2">"Sa tulong ng Treble, mayroong bago at matatag na vendor interface na magbibigay ng daan sa mga hardware-specific na parte ng Android, na nakakatulong sa mga gumagawa ng device na maghatid ng mga bagong Android releases sa pamamagitan ng pag update sa framework ng Android OS nang walang kinakailangang karagdagang gawin mula sa mga silicon manufacturers."</string>
     <string name="contributors_title">"Maraming salamat sa mga nag-ambag!"</string>
-
-    <!-- Shows as a description under the name of the contributor. The variable is the language where the contributions were made. The language name is also translated to the device language of the user is applicable.
-
-Example: English translations, Spanish translations, etc. -->
-    <string name="contributors_description_translation">"Mga pagsasalin sa %1$s"</string>
+    <string name="contributors_description_translation">"Pagsasalin sa %1$s"</string>
+    <string name="theme_title">"Itakda ang tema"</string>
+    <string name="theme_option_default_title">"Gamitin ang default"</string>
+    <string name="theme_option_light_title">"Maliwanag na tema"</string>
+    <string name="theme_option_dark_title">"Madilim na tema"</string>
 </resources>

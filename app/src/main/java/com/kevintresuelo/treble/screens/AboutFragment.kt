@@ -105,10 +105,12 @@ class AboutFragment : Fragment() {
         contributorsList.add(Contributor("Julio Gonzales", Locale("es").displayName))
         contributorsList.add(Contributor("Melvin Salas", Locale("es").displayName))
         contributorsList.add(Contributor("Nicolas", Locale("fr").displayName))
+        contributorsList.add(Contributor("Osakanataro", Locale("ja").displayName))
         contributorsList.add(Contributor("Rob", Locale("it").displayName))
         contributorsList.add(Contributor("Sean Kuan", Locale.TRADITIONAL_CHINESE.displayName))
         contributorsList.add(Contributor("Svegmen925", Locale("ru").displayName))
         contributorsList.add(Contributor("Vojtěch Vokoun", Locale("cs").displayName))
+        contributorsList.add(Contributor("William Paiva (Quakeman0)", Locale("pt","BR").displayName))
 
         contributorsListAdapter.setContributorsList(contributorsList)
 
